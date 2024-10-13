@@ -4,7 +4,7 @@
 
 set TIME_start [clock seconds] 
 namespace eval ::optrace {
-  variable script "C:/Users/Darshana/Documents/GitHub/JitFilt/ESP1/FPGA1/FPGA1/FPGA1.runs/synth_1/top.tcl"
+  variable script "C:/Users/Darshana/Documents/GitHub/JitFilt/JitFilt-PLL/EXP1/FPGA1/FPGA1/FPGA1.runs/synth_1/top.tcl"
   variable category "vivado_synth"
 }
 
@@ -78,31 +78,28 @@ set_param project.singleFileAddWarning.threshold 0
 set_param project.compositeFile.enableAutoGeneration 0
 set_param synth.vivado.isSynthRun true
 set_msg_config -source 4 -id {IP_Flow 19-2162} -severity warning -new_severity info
-set_property webtalk.parent_dir C:/Users/Darshana/Documents/GitHub/JitFilt/ESP1/FPGA1/FPGA1/FPGA1.cache/wt [current_project]
-set_property parent.project_path C:/Users/Darshana/Documents/GitHub/JitFilt/ESP1/FPGA1/FPGA1/FPGA1.xpr [current_project]
+set_property webtalk.parent_dir C:/Users/Darshana/Documents/GitHub/JitFilt/JitFilt-PLL/EXP1/FPGA1/FPGA1/FPGA1.cache/wt [current_project]
+set_property parent.project_path C:/Users/Darshana/Documents/GitHub/JitFilt/JitFilt-PLL/EXP1/FPGA1/FPGA1/FPGA1.xpr [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language Verilog [current_project]
-set_property ip_output_repo c:/Users/Darshana/Documents/GitHub/JitFilt/ESP1/FPGA1/FPGA1/FPGA1.cache/ip [current_project]
+set_property ip_output_repo c:/Users/Darshana/Documents/GitHub/JitFilt/JitFilt-PLL/EXP1/FPGA1/FPGA1/FPGA1.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
 OPTRACE "Creating in-memory project" END { }
 OPTRACE "Adding files" START { }
-read_verilog C:/Users/Darshana/Documents/GitHub/JitFilt/ESP1/FPGA1/FPGA1/FPGA1.srcs/sources_1/imports/SimonCipherVerilog-master/utility.vh
+read_verilog C:/Users/Darshana/Documents/GitHub/JitFilt/JitFilt-PLL/EXP1/FPGA1/FPGA1/FPGA1.srcs/sources_1/imports/SimonCipherVerilog-master/utility.vh
 read_verilog -library xil_defaultlib {
-  C:/Users/Darshana/Documents/GitHub/JitFilt/ESP1/FPGA1/FPGA1/FPGA1.srcs/sources_1/new/PLL_instance.v
-  C:/Users/Darshana/Documents/GitHub/JitFilt/ESP1/FPGA1/FPGA1/FPGA1.srcs/sources_1/imports/Desktop/aes128_table_ecb.v
-  C:/Users/Darshana/Documents/GitHub/JitFilt/ESP1/FPGA1/FPGA1/FPGA1.srcs/sources_1/imports/ZEDBOARD-On-ChipSensors/clock.v
-  C:/Users/Darshana/Documents/GitHub/JitFilt/ESP1/FPGA1/FPGA1/FPGA1.srcs/sources_1/imports/ZEDBOARD-On-ChipSensors/uartTX.v
-  C:/Users/Darshana/Documents/GitHub/JitFilt/ESP1/FPGA1/FPGA1/FPGA1.srcs/sources_1/imports/Downloads/uart_rx.v
-  C:/Users/Darshana/Documents/GitHub/JitFilt/ESP1/FPGA1/FPGA1/FPGA1.srcs/sources_1/imports/ZEDBOARD-On-ChipSensors/uartrx.v
-  C:/Users/Darshana/Documents/GitHub/JitFilt/ESP1/FPGA1/FPGA1/FPGA1.srcs/sources_1/new/top.v
-  C:/Users/Darshana/Documents/GitHub/JitFilt/ESP1/FPGA1/FPGA1/FPGA1.srcs/sources_1/imports/SimonCipherVerilog-master/key_expansion.v
-  C:/Users/Darshana/Documents/GitHub/JitFilt/ESP1/FPGA1/FPGA1/FPGA1.srcs/sources_1/imports/SimonCipherVerilog-master/round.v
-  C:/Users/Darshana/Documents/GitHub/JitFilt/ESP1/FPGA1/FPGA1/FPGA1.srcs/sources_1/imports/SimonCipherVerilog-master/simon.v
-  C:/Users/Darshana/Documents/GitHub/JitFilt/ESP1/FPGA1/FPGA1/FPGA1.srcs/sources_1/new/top_tb.v
-  C:/Users/Darshana/Documents/GitHub/JitFilt/ESP1/FPGA1/FPGA1/FPGA1.srcs/sources_1/new/clk_filt_PLL.v
+  C:/Users/Darshana/Documents/GitHub/JitFilt/JitFilt-PLL/EXP1/FPGA1/FPGA1/FPGA1.srcs/sources_1/new/PLL_instance.v
+  C:/Users/Darshana/Documents/GitHub/JitFilt/JitFilt-PLL/EXP1/FPGA1/FPGA1/FPGA1.srcs/sources_1/imports/Desktop/aes128_table_ecb.v
+  C:/Users/Darshana/Documents/GitHub/JitFilt/JitFilt-PLL/EXP1/FPGA1/FPGA1/FPGA1.srcs/sources_1/imports/ZEDBOARD-On-ChipSensors/clock.v
+  C:/Users/Darshana/Documents/GitHub/JitFilt/JitFilt-PLL/EXP1/FPGA1/FPGA1/FPGA1.srcs/sources_1/imports/ZEDBOARD-On-ChipSensors/uartTX.v
+  C:/Users/Darshana/Documents/GitHub/JitFilt/JitFilt-PLL/EXP1/FPGA1/FPGA1/FPGA1.srcs/sources_1/imports/Downloads/uart_rx.v
+  C:/Users/Darshana/Documents/GitHub/JitFilt/JitFilt-PLL/EXP1/FPGA1/FPGA1/FPGA1.srcs/sources_1/imports/ZEDBOARD-On-ChipSensors/uartrx.v
+  C:/Users/Darshana/Documents/GitHub/JitFilt/JitFilt-PLL/EXP1/FPGA1/FPGA1/FPGA1.srcs/sources_1/new/top.v
+  C:/Users/Darshana/Documents/GitHub/JitFilt/JitFilt-PLL/EXP1/FPGA1/FPGA1/FPGA1.srcs/sources_1/new/top_tb.v
+  C:/Users/Darshana/Documents/GitHub/JitFilt/JitFilt-PLL/EXP1/FPGA1/FPGA1/FPGA1.srcs/sources_1/new/clk_filt_PLL.v
 }
-add_files C:/Users/Darshana/Documents/GitHub/JitFilt/ESP1/FPGA1/FPGA1/FPGA1.srcs/sources_1/bd/design_1/design_1.bd
-set_property used_in_implementation false [get_files -all C:/Users/Darshana/Documents/GitHub/JitFilt/ESP1/FPGA1/FPGA1/FPGA1.gen/sources_1/bd/design_1/design_1_ooc.xdc]
+add_files C:/Users/Darshana/Documents/GitHub/JitFilt/JitFilt-PLL/EXP1/FPGA1/FPGA1/FPGA1.srcs/sources_1/bd/design_1/design_1.bd
+set_property used_in_implementation false [get_files -all c:/Users/Darshana/Documents/GitHub/JitFilt/JitFilt-PLL/EXP1/FPGA1/FPGA1/FPGA1.gen/sources_1/bd/design_1/design_1_ooc.xdc]
 
 OPTRACE "Adding files" END { }
 # Mark all dcp files as not used in implementation to prevent them from being
@@ -113,14 +110,14 @@ OPTRACE "Adding files" END { }
 foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
   set_property used_in_implementation false $dcp
 }
-read_xdc C:/Users/Darshana/Documents/GitHub/JitFilt/ESP1/FPGA1/FPGA1/FPGA1.srcs/constrs_1/imports/new/our_constraints.xdc
-set_property used_in_implementation false [get_files C:/Users/Darshana/Documents/GitHub/JitFilt/ESP1/FPGA1/FPGA1/FPGA1.srcs/constrs_1/imports/new/our_constraints.xdc]
+read_xdc C:/Users/Darshana/Documents/GitHub/JitFilt/JitFilt-PLL/EXP1/FPGA1/FPGA1/FPGA1.srcs/constrs_1/imports/new/our_constraints.xdc
+set_property used_in_implementation false [get_files C:/Users/Darshana/Documents/GitHub/JitFilt/JitFilt-PLL/EXP1/FPGA1/FPGA1/FPGA1.srcs/constrs_1/imports/new/our_constraints.xdc]
 
 read_xdc dont_touch.xdc
 set_property used_in_implementation false [get_files dont_touch.xdc]
 set_param ips.enableIPCacheLiteLoad 1
 
-read_checkpoint -auto_incremental -incremental C:/Users/Darshana/Documents/GitHub/JitFilt/ESP1/FPGA1/FPGA1/FPGA1.srcs/utils_1/imports/synth_1/tb_simon.dcp
+read_checkpoint -auto_incremental -incremental C:/Users/Darshana/Documents/GitHub/JitFilt/JitFilt-PLL/EXP1/FPGA1/FPGA1/FPGA1.srcs/utils_1/imports/synth_1/tb_simon.dcp
 close [open __synthesis_is_running__ w]
 
 OPTRACE "synth_design" START { }

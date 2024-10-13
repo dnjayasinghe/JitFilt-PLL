@@ -25,7 +25,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='C:/Users/Darshana/Documents/GitHub/JitFilt/ESP1/FPGA1/FPGA1/FPGA1.runs/synth_1'
+HD_PWD='C:/Users/Darshana/Documents/GitHub/JitFilt/JitFilt-PLL/EXP1/FPGA1/FPGA1/FPGA1.runs/synth_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log

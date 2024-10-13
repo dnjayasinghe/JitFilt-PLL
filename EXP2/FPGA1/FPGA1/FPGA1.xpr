@@ -4,7 +4,7 @@
 <!-- Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.                   -->
 <!-- Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.   -->
 
-<Project Product="Vivado" Version="7" Minor="65" Path="C:/Users/Darshana/Documents/GitHub/JitFilt/EXP2/FPGA1/FPGA1/FPGA1.xpr">
+<Project Product="Vivado" Version="7" Minor="65" Path="C:/Users/Darshana/Documents/GitHub/JitFilt/JitFilt-PLL/EXP2/FPGA1/FPGA1/FPGA1.xpr">
   <DefaultLaunch Dir="$PRUNDIR"/>
   <Configuration>
     <Option Name="Id" Val="dd74b46848cc4b77b3c8293fafa50c12"/>
@@ -92,15 +92,6 @@
   <FileSets Version="1" Minor="32">
     <FileSet Name="sources_1" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
       <Filter Type="Srcs"/>
-      <File Path="$PSRCDIR/sources_1/new/PLL_instance.v">
-        <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../AES/simon.srcs/sources_1/new/PLL_instance.v"/>
-          <Attr Name="ImportTime" Val="1705202767"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
       <File Path="$PSRCDIR/sources_1/imports/Desktop/aes128_table_ecb.v">
         <FileInfo>
           <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../Desktop/aes128_table_ecb.v"/>
@@ -159,24 +150,6 @@
         <FileInfo>
           <Attr Name="ImportPath" Val="$PPRDIR/../../AES/simon.srcs/sources_1/new/top.v"/>
           <Attr Name="ImportTime" Val="1728607539"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/imports/SimonCipherVerilog-master/key_expansion.v">
-        <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../SimonCipherVerilog-master/key_expansion.v"/>
-          <Attr Name="ImportTime" Val="1688343278"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/imports/SimonCipherVerilog-master/round.v">
-        <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../SimonCipherVerilog-master/round.v"/>
-          <Attr Name="ImportTime" Val="1688343278"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>

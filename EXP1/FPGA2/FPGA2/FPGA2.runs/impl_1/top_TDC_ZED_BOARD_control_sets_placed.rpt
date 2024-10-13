@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2023.2 (win64) Build 4029153 Fri Oct 13 20:14:34 MDT 2023
-| Date         : Sat Oct 12 17:59:09 2024
+| Date         : Mon Oct 14 04:59:06 2024
 | Host         : DESKTOP-O3QOG7I running 64-bit major release  (build 9200)
 | Command      : report_control_sets -verbose -file top_TDC_ZED_BOARD_control_sets_placed.rpt
 | Design       : top_TDC_ZED_BOARD
@@ -77,8 +77,8 @@ Table of Contents
 |  clk_IBUF_BUFG | led_reg_i_1_n_0                  |                         |                1 |              1 |         1.00 |
 |  clk_IBUF_BUFG | uartTX/E[0]                      |                         |                1 |              4 |         4.00 |
 |  clk_IBUF_BUFG | led_reg                          |                         |                2 |              6 |         3.00 |
-|  clk_IBUF_BUFG | uartRX/E[0]                      |                         |                3 |              8 |         2.67 |
 |  clk_IBUF_BUFG | uartRX/SEN_FSM_reg[0][0]         |                         |                2 |              8 |         4.00 |
+|  clk_IBUF_BUFG | uartRX/E[0]                      |                         |                3 |              8 |         2.67 |
 |  clk_IBUF_BUFG | uartTX/r_Tx_Data_0               |                         |                3 |              8 |         2.67 |
 |  clk_IBUF_BUFG | TXdata[7]_i_1_n_0                |                         |                5 |              8 |         1.60 |
 |  clk_IBUF_BUFG | uartTX/r_Clock_Count_1           | uartTX/r_Clock_Count0   |                4 |              9 |         2.25 |
@@ -86,16 +86,16 @@ Table of Contents
 |  clk_IBUF_BUFG | tdc_addr[9]_i_1_n_0              |                         |                6 |             10 |         1.67 |
 |  clk_IBUF_BUFG | uartTX/r_Tx_Done_reg_0           | uartTX/SEN_FSM_reg[1]_1 |                3 |             12 |         4.00 |
 |  clk_IBUF_BUFG | uartRX/r_Clock_Count[15]_i_1_n_0 |                         |                7 |             16 |         2.29 |
-|  clk_IBUF_BUFG | tdc_data_reg_0_63_0_2_i_4_n_0    |                         |                6 |             24 |         4.00 |
-|  clk_IBUF_BUFG | tdc_data_reg_192_255_0_2_i_1_n_0 |                         |                6 |             24 |         4.00 |
-|  clk_IBUF_BUFG | tdc_data_reg_128_191_0_2_i_1_n_0 |                         |                6 |             24 |         4.00 |
-|  clk_IBUF_BUFG | tdc_data_reg_320_383_0_2_i_1_n_0 |                         |                6 |             24 |         4.00 |
-|  clk_IBUF_BUFG | tdc_data_reg_512_575_0_2_i_1_n_0 |                         |                6 |             24 |         4.00 |
-|  clk_IBUF_BUFG | tdc_data_reg_384_447_0_2_i_1_n_0 |                         |                6 |             24 |         4.00 |
-|  clk_IBUF_BUFG | tdc_data_reg_576_639_0_2_i_1_n_0 |                         |                6 |             24 |         4.00 |
-|  clk_IBUF_BUFG | tdc_data_reg_448_511_0_2_i_1_n_0 |                         |                6 |             24 |         4.00 |
-|  clk_IBUF_BUFG | tdc_data_reg_64_127_0_2_i_1_n_0  |                         |                6 |             24 |         4.00 |
 |  clk_IBUF_BUFG | tdc_data_reg_256_319_0_2_i_1_n_0 |                         |                6 |             24 |         4.00 |
+|  clk_IBUF_BUFG | tdc_data_reg_384_447_0_2_i_1_n_0 |                         |                6 |             24 |         4.00 |
+|  clk_IBUF_BUFG | tdc_data_reg_192_255_0_2_i_1_n_0 |                         |                6 |             24 |         4.00 |
+|  clk_IBUF_BUFG | tdc_data_reg_320_383_0_2_i_1_n_0 |                         |                6 |             24 |         4.00 |
+|  clk_IBUF_BUFG | tdc_data_reg_448_511_0_2_i_1_n_0 |                         |                6 |             24 |         4.00 |
+|  clk_IBUF_BUFG | tdc_data_reg_0_63_0_2_i_4_n_0    |                         |                6 |             24 |         4.00 |
+|  clk_IBUF_BUFG | tdc_data_reg_128_191_0_2_i_1_n_0 |                         |                6 |             24 |         4.00 |
+|  clk_IBUF_BUFG | tdc_data_reg_64_127_0_2_i_1_n_0  |                         |                6 |             24 |         4.00 |
+|  clk_IBUF_BUFG | tdc_data_reg_576_639_0_2_i_1_n_0 |                         |                6 |             24 |         4.00 |
+|  clk_IBUF_BUFG | tdc_data_reg_512_575_0_2_i_1_n_0 |                         |                6 |             24 |         4.00 |
 |  clk_IBUF_BUFG | outReg[159]_i_1_n_0              |                         |              131 |            320 |         2.44 |
 |  clk_IBUF_BUFG |                                  | tdc1_decode/SS[0]       |              158 |            336 |         2.13 |
 |  clk_IBUF_BUFG |                                  |                         |              101 |            373 |         3.69 |

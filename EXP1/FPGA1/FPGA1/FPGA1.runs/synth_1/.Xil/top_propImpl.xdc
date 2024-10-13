@@ -1,4 +1,4 @@
-set_property SRC_FILE_INFO {cfile:C:/Users/Darshana/Documents/GitHub/JitFilt/ESP1/FPGA1/FPGA1/FPGA1.srcs/constrs_1/imports/new/our_constraints.xdc rfile:../../../FPGA1.srcs/constrs_1/imports/new/our_constraints.xdc id:1} [current_design]
+set_property SRC_FILE_INFO {cfile:C:/Users/Darshana/Documents/GitHub/JitFilt/JitFilt-PLL/EXP1/FPGA1/FPGA1/FPGA1.srcs/constrs_1/imports/new/our_constraints.xdc rfile:../../../FPGA1.srcs/constrs_1/imports/new/our_constraints.xdc id:1} [current_design]
 set_property src_info {type:XDC file:1 line:81 export:INPUT save:INPUT read:READ} [current_design]
 set_property PACKAGE_PIN Y9 [get_ports clk]
 set_property src_info {type:XDC file:1 line:86 export:INPUT save:INPUT read:READ} [current_design]

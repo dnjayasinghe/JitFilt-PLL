@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7z020clg484-1" LaunchTime="1728716112" LaunchIncrCheckpoint="$PSRCDIR/utils_1/imports/synth_1/tb_simon.dcp">
+<GenRun Id="synth_1" LaunchPart="xc7z020clg484-1" LaunchTime="1728842036" LaunchIncrCheckpoint="$PSRCDIR/utils_1/imports/synth_1/top_TDC_ZED_BOARD.dcp">
   <File Type="PA-TCL" Name="top_TDC_ZED_BOARD.tcl"/>
   <File Type="RDS-PROPCONSTRS" Name="top_TDC_ZED_BOARD_drc_synth.rpt"/>
   <File Type="REPORTS-TCL" Name="top_TDC_ZED_BOARD_reports.tcl"/>
@@ -13,44 +13,8 @@
     <Filter Type="Srcs"/>
     <File Path="$PSRCDIR/sources_1/new/PLL_instance.v">
       <FileInfo>
-        <Attr Name="ImportPath" Val="$PPRDIR/../../../../Summer-Project-/Summer_project/AES/simon.srcs/sources_1/new/PLL_instance.v"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../Summer-Project-/Summer_project/AES/simon.srcs/sources_1/new/PLL_instance.v"/>
         <Attr Name="ImportTime" Val="1705891246"/>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="implementation"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
-    <File Path="$PSRCDIR/sources_1/imports/SimonCipherVerilog-master/utility.vh">
-      <FileInfo>
-        <Attr Name="ImportPath" Val="$PPRDIR/../../../../Summer-Project-/Summer_project/SimonCipherVerilog-master/utility.vh"/>
-        <Attr Name="ImportTime" Val="1688343278"/>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-        <Attr Name="IsVisible" Val="1"/>
-      </FileInfo>
-    </File>
-    <File Path="$PSRCDIR/sources_1/imports/SimonCipherVerilog-master/key_expansion.v">
-      <FileInfo>
-        <Attr Name="ImportPath" Val="$PPRDIR/../../../../Summer-Project-/Summer_project/SimonCipherVerilog-master/key_expansion.v"/>
-        <Attr Name="ImportTime" Val="1688343278"/>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="implementation"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
-    <File Path="$PSRCDIR/sources_1/imports/SimonCipherVerilog-master/round.v">
-      <FileInfo>
-        <Attr Name="ImportPath" Val="$PPRDIR/../../../../Summer-Project-/Summer_project/SimonCipherVerilog-master/round.v"/>
-        <Attr Name="ImportTime" Val="1688343278"/>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="implementation"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
-    <File Path="$PSRCDIR/sources_1/imports/SimonCipherVerilog-master/simon.v">
-      <FileInfo>
-        <Attr Name="ImportPath" Val="$PPRDIR/../../../../Summer-Project-/Summer_project/SimonCipherVerilog-master/simon.v"/>
-        <Attr Name="ImportTime" Val="1688343278"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
@@ -93,7 +57,7 @@
     </File>
     <File Path="$PSRCDIR/sources_1/new/top_TDC.v">
       <FileInfo>
-        <Attr Name="ImportPath" Val="$PPRDIR/../../../../Summer-Project-/Summer_project/TDC-ZEDBoard/TDC_ZEDBOARD/TDC_ZEDBOARD.srcs/sources_1/new/top_TDC.v"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../Summer-Project-/Summer_project/TDC-ZEDBoard/TDC_ZEDBOARD/TDC_ZEDBOARD.srcs/sources_1/new/top_TDC.v"/>
         <Attr Name="ImportTime" Val="1728613151"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
@@ -122,10 +86,8 @@
   </FileSet>
   <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1" RelGenDir="$PGENDIR/utils_1">
     <Filter Type="Utils"/>
-    <File Path="$PSRCDIR/utils_1/imports/synth_1/tb_simon.dcp">
+    <File Path="$PSRCDIR/utils_1/imports/synth_1/top_TDC_ZED_BOARD.dcp">
       <FileInfo>
-        <Attr Name="ImportPath" Val="$PPRDIR/../../../../Summer-Project-/Summer_project/AES/simon.srcs/utils_1/imports/synth_1/tb_simon.dcp"/>
-        <Attr Name="ImportTime" Val="1707187387"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedInSteps" Val="synth_1"/>

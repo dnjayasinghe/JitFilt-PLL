@@ -17,7 +17,7 @@ proc create_report { reportName command } {
   }
 }
 namespace eval ::optrace {
-  variable script "C:/Users/Darshana/Documents/GitHub/JitFilt/ESP1/FPGA1/FPGA1/FPGA1.runs/impl_1/top.tcl"
+  variable script "C:/Users/Darshana/Documents/GitHub/JitFilt/JitFilt-PLL/EXP1/FPGA1/FPGA1/FPGA1.runs/impl_1/top.tcl"
   variable category "vivado_impl"
 }
 
@@ -130,19 +130,19 @@ OPTRACE "create in-memory project" START { }
   set_param project.singleFileAddWarning.threshold 0
 OPTRACE "create in-memory project" END { }
 OPTRACE "set parameters" START { }
-  set_property webtalk.parent_dir C:/Users/Darshana/Documents/GitHub/JitFilt/ESP1/FPGA1/FPGA1/FPGA1.cache/wt [current_project]
-  set_property parent.project_path C:/Users/Darshana/Documents/GitHub/JitFilt/ESP1/FPGA1/FPGA1/FPGA1.xpr [current_project]
-  set_property ip_output_repo C:/Users/Darshana/Documents/GitHub/JitFilt/ESP1/FPGA1/FPGA1/FPGA1.cache/ip [current_project]
+  set_property webtalk.parent_dir C:/Users/Darshana/Documents/GitHub/JitFilt/JitFilt-PLL/EXP1/FPGA1/FPGA1/FPGA1.cache/wt [current_project]
+  set_property parent.project_path C:/Users/Darshana/Documents/GitHub/JitFilt/JitFilt-PLL/EXP1/FPGA1/FPGA1/FPGA1.xpr [current_project]
+  set_property ip_output_repo C:/Users/Darshana/Documents/GitHub/JitFilt/JitFilt-PLL/EXP1/FPGA1/FPGA1/FPGA1.cache/ip [current_project]
   set_property ip_cache_permissions {read write} [current_project]
 OPTRACE "set parameters" END { }
 OPTRACE "add files" START { }
-  add_files -quiet C:/Users/Darshana/Documents/GitHub/JitFilt/ESP1/FPGA1/FPGA1/FPGA1.runs/synth_1/top.dcp
+  add_files -quiet C:/Users/Darshana/Documents/GitHub/JitFilt/JitFilt-PLL/EXP1/FPGA1/FPGA1/FPGA1.runs/synth_1/top.dcp
   set_msg_config -source 4 -id {BD 41-1661} -limit 0
   set_param project.isImplRun true
-  add_files C:/Users/Darshana/Documents/GitHub/JitFilt/ESP1/FPGA1/FPGA1/FPGA1.srcs/sources_1/bd/design_1/design_1.bd
+  add_files C:/Users/Darshana/Documents/GitHub/JitFilt/JitFilt-PLL/EXP1/FPGA1/FPGA1/FPGA1.srcs/sources_1/bd/design_1/design_1.bd
   set_param project.isImplRun false
 OPTRACE "read constraints: implementation" START { }
-  read_xdc C:/Users/Darshana/Documents/GitHub/JitFilt/ESP1/FPGA1/FPGA1/FPGA1.srcs/constrs_1/imports/new/our_constraints.xdc
+  read_xdc C:/Users/Darshana/Documents/GitHub/JitFilt/JitFilt-PLL/EXP1/FPGA1/FPGA1/FPGA1.srcs/constrs_1/imports/new/our_constraints.xdc
 OPTRACE "read constraints: implementation" END { }
 OPTRACE "read constraints: implementation_pre" START { }
 OPTRACE "read constraints: implementation_pre" END { }

@@ -12,9 +12,9 @@
     ** Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 
 source top_TDC_ZED_BOARD.tcl -notrace
-create_project: Time (s): cpu = 00:00:07 ; elapsed = 00:00:09 . Memory (MB): peak = 551.324 ; gain = 182.824
-Command: read_checkpoint -auto_incremental -incremental C:/Users/Darshana/Documents/GitHub/JitFilt/ESP1/FPGA2/FPGA2/FPGA2.srcs/utils_1/imports/synth_1/tb_simon.dcp
-INFO: [Vivado 12-5825] Read reference checkpoint from C:/Users/Darshana/Documents/GitHub/JitFilt/ESP1/FPGA2/FPGA2/FPGA2.srcs/utils_1/imports/synth_1/tb_simon.dcp for incremental synthesis
+create_project: Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 550.762 ; gain = 181.762
+Command: read_checkpoint -auto_incremental -incremental C:/Users/Darshana/Documents/GitHub/JitFilt/JitFilt-PLL/EXP1/FPGA2/FPGA2/FPGA2.srcs/utils_1/imports/synth_1/top_TDC_ZED_BOARD.dcp
+INFO: [Vivado 12-5825] Read reference checkpoint from C:/Users/Darshana/Documents/GitHub/JitFilt/JitFilt-PLL/EXP1/FPGA2/FPGA2/FPGA2.srcs/utils_1/imports/synth_1/top_TDC_ZED_BOARD.dcp for incremental synthesis
 INFO: [Vivado 12-7989] Please ensure there are no constraint changes
 Command: synth_design -top top_TDC_ZED_BOARD -part xc7z020clg484-1
 Starting synth_design
@@ -25,28 +25,28 @@ INFO: [Designutils 20-5440] No compile time benefit to using incremental synthes
 INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 18544
+INFO: [Synth 8-7075] Helper process launched with PID 20016
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1414.281 ; gain = 439.523
+Starting RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:06 . Memory (MB): peak = 1414.926 ; gain = 440.094
 ---------------------------------------------------------------------------------
-WARNING: [Synth 8-11065] parameter 's_IDLE' becomes localparam in 'uart_tx' with formal parameter declaration list [C:/Users/Darshana/Documents/GitHub/JitFilt/ESP1/FPGA2/FPGA2/FPGA2.srcs/sources_1/imports/ZEDBOARD-On-ChipSensors/uartTX.v:47]
-WARNING: [Synth 8-11065] parameter 's_TX_START_BIT' becomes localparam in 'uart_tx' with formal parameter declaration list [C:/Users/Darshana/Documents/GitHub/JitFilt/ESP1/FPGA2/FPGA2/FPGA2.srcs/sources_1/imports/ZEDBOARD-On-ChipSensors/uartTX.v:48]
-WARNING: [Synth 8-11065] parameter 's_TX_DATA_BITS' becomes localparam in 'uart_tx' with formal parameter declaration list [C:/Users/Darshana/Documents/GitHub/JitFilt/ESP1/FPGA2/FPGA2/FPGA2.srcs/sources_1/imports/ZEDBOARD-On-ChipSensors/uartTX.v:49]
-WARNING: [Synth 8-11065] parameter 's_TX_STOP_BIT' becomes localparam in 'uart_tx' with formal parameter declaration list [C:/Users/Darshana/Documents/GitHub/JitFilt/ESP1/FPGA2/FPGA2/FPGA2.srcs/sources_1/imports/ZEDBOARD-On-ChipSensors/uartTX.v:50]
-WARNING: [Synth 8-11065] parameter 's_CLEANUP' becomes localparam in 'uart_tx' with formal parameter declaration list [C:/Users/Darshana/Documents/GitHub/JitFilt/ESP1/FPGA2/FPGA2/FPGA2.srcs/sources_1/imports/ZEDBOARD-On-ChipSensors/uartTX.v:51]
-WARNING: [Synth 8-11065] parameter 's_IDLE' becomes localparam in 'uart_rx' with formal parameter declaration list [C:/Users/Darshana/Documents/GitHub/JitFilt/ESP1/FPGA2/FPGA2/FPGA2.srcs/sources_1/imports/ZEDBOARD-On-ChipSensors/uartrx.v:23]
-WARNING: [Synth 8-11065] parameter 's_RX_START_BIT' becomes localparam in 'uart_rx' with formal parameter declaration list [C:/Users/Darshana/Documents/GitHub/JitFilt/ESP1/FPGA2/FPGA2/FPGA2.srcs/sources_1/imports/ZEDBOARD-On-ChipSensors/uartrx.v:24]
-WARNING: [Synth 8-11065] parameter 's_RX_DATA_BITS' becomes localparam in 'uart_rx' with formal parameter declaration list [C:/Users/Darshana/Documents/GitHub/JitFilt/ESP1/FPGA2/FPGA2/FPGA2.srcs/sources_1/imports/ZEDBOARD-On-ChipSensors/uartrx.v:25]
-WARNING: [Synth 8-11065] parameter 's_RX_STOP_BIT' becomes localparam in 'uart_rx' with formal parameter declaration list [C:/Users/Darshana/Documents/GitHub/JitFilt/ESP1/FPGA2/FPGA2/FPGA2.srcs/sources_1/imports/ZEDBOARD-On-ChipSensors/uartrx.v:26]
-WARNING: [Synth 8-11065] parameter 's_CLEANUP' becomes localparam in 'uart_rx' with formal parameter declaration list [C:/Users/Darshana/Documents/GitHub/JitFilt/ESP1/FPGA2/FPGA2/FPGA2.srcs/sources_1/imports/ZEDBOARD-On-ChipSensors/uartrx.v:27]
-INFO: [Synth 8-11241] undeclared symbol 'clk_out0', assumed default net type 'wire' [C:/Users/Darshana/Documents/GitHub/JitFilt/ESP1/FPGA2/FPGA2/FPGA2.srcs/sources_1/new/top_TDC.v:88]
-INFO: [Synth 8-11241] undeclared symbol 'clock_signal', assumed default net type 'wire' [C:/Users/Darshana/Documents/GitHub/JitFilt/ESP1/FPGA2/FPGA2/FPGA2.srcs/sources_1/new/top_TDC.v:288]
-INFO: [Synth 8-6157] synthesizing module 'top_TDC_ZED_BOARD' [C:/Users/Darshana/Documents/GitHub/JitFilt/ESP1/FPGA2/FPGA2/FPGA2.srcs/sources_1/new/top_TDC.v:8]
-INFO: [Synth 8-6157] synthesizing module 'uart_tx' [C:/Users/Darshana/Documents/GitHub/JitFilt/ESP1/FPGA2/FPGA2/FPGA2.srcs/sources_1/imports/ZEDBOARD-On-ChipSensors/uartTX.v:36]
-INFO: [Synth 8-6155] done synthesizing module 'uart_tx' (0#1) [C:/Users/Darshana/Documents/GitHub/JitFilt/ESP1/FPGA2/FPGA2/FPGA2.srcs/sources_1/imports/ZEDBOARD-On-ChipSensors/uartTX.v:36]
-INFO: [Synth 8-6157] synthesizing module 'uart_rx' [C:/Users/Darshana/Documents/GitHub/JitFilt/ESP1/FPGA2/FPGA2/FPGA2.srcs/sources_1/imports/ZEDBOARD-On-ChipSensors/uartrx.v:14]
-INFO: [Synth 8-6155] done synthesizing module 'uart_rx' (0#1) [C:/Users/Darshana/Documents/GitHub/JitFilt/ESP1/FPGA2/FPGA2/FPGA2.srcs/sources_1/imports/ZEDBOARD-On-ChipSensors/uartrx.v:14]
-INFO: [Synth 8-6157] synthesizing module 'PLL_instance' [C:/Users/Darshana/Documents/GitHub/JitFilt/ESP1/FPGA2/FPGA2/FPGA2.srcs/sources_1/new/PLL_instance.v:23]
+WARNING: [Synth 8-11065] parameter 's_IDLE' becomes localparam in 'uart_tx' with formal parameter declaration list [C:/Users/Darshana/Documents/GitHub/JitFilt/JitFilt-PLL/EXP1/FPGA2/FPGA2/FPGA2.srcs/sources_1/imports/ZEDBOARD-On-ChipSensors/uartTX.v:47]
+WARNING: [Synth 8-11065] parameter 's_TX_START_BIT' becomes localparam in 'uart_tx' with formal parameter declaration list [C:/Users/Darshana/Documents/GitHub/JitFilt/JitFilt-PLL/EXP1/FPGA2/FPGA2/FPGA2.srcs/sources_1/imports/ZEDBOARD-On-ChipSensors/uartTX.v:48]
+WARNING: [Synth 8-11065] parameter 's_TX_DATA_BITS' becomes localparam in 'uart_tx' with formal parameter declaration list [C:/Users/Darshana/Documents/GitHub/JitFilt/JitFilt-PLL/EXP1/FPGA2/FPGA2/FPGA2.srcs/sources_1/imports/ZEDBOARD-On-ChipSensors/uartTX.v:49]
+WARNING: [Synth 8-11065] parameter 's_TX_STOP_BIT' becomes localparam in 'uart_tx' with formal parameter declaration list [C:/Users/Darshana/Documents/GitHub/JitFilt/JitFilt-PLL/EXP1/FPGA2/FPGA2/FPGA2.srcs/sources_1/imports/ZEDBOARD-On-ChipSensors/uartTX.v:50]
+WARNING: [Synth 8-11065] parameter 's_CLEANUP' becomes localparam in 'uart_tx' with formal parameter declaration list [C:/Users/Darshana/Documents/GitHub/JitFilt/JitFilt-PLL/EXP1/FPGA2/FPGA2/FPGA2.srcs/sources_1/imports/ZEDBOARD-On-ChipSensors/uartTX.v:51]
+WARNING: [Synth 8-11065] parameter 's_IDLE' becomes localparam in 'uart_rx' with formal parameter declaration list [C:/Users/Darshana/Documents/GitHub/JitFilt/JitFilt-PLL/EXP1/FPGA2/FPGA2/FPGA2.srcs/sources_1/imports/ZEDBOARD-On-ChipSensors/uartrx.v:23]
+WARNING: [Synth 8-11065] parameter 's_RX_START_BIT' becomes localparam in 'uart_rx' with formal parameter declaration list [C:/Users/Darshana/Documents/GitHub/JitFilt/JitFilt-PLL/EXP1/FPGA2/FPGA2/FPGA2.srcs/sources_1/imports/ZEDBOARD-On-ChipSensors/uartrx.v:24]
+WARNING: [Synth 8-11065] parameter 's_RX_DATA_BITS' becomes localparam in 'uart_rx' with formal parameter declaration list [C:/Users/Darshana/Documents/GitHub/JitFilt/JitFilt-PLL/EXP1/FPGA2/FPGA2/FPGA2.srcs/sources_1/imports/ZEDBOARD-On-ChipSensors/uartrx.v:25]
+WARNING: [Synth 8-11065] parameter 's_RX_STOP_BIT' becomes localparam in 'uart_rx' with formal parameter declaration list [C:/Users/Darshana/Documents/GitHub/JitFilt/JitFilt-PLL/EXP1/FPGA2/FPGA2/FPGA2.srcs/sources_1/imports/ZEDBOARD-On-ChipSensors/uartrx.v:26]
+WARNING: [Synth 8-11065] parameter 's_CLEANUP' becomes localparam in 'uart_rx' with formal parameter declaration list [C:/Users/Darshana/Documents/GitHub/JitFilt/JitFilt-PLL/EXP1/FPGA2/FPGA2/FPGA2.srcs/sources_1/imports/ZEDBOARD-On-ChipSensors/uartrx.v:27]
+INFO: [Synth 8-11241] undeclared symbol 'clk_out0', assumed default net type 'wire' [C:/Users/Darshana/Documents/GitHub/JitFilt/JitFilt-PLL/EXP1/FPGA2/FPGA2/FPGA2.srcs/sources_1/new/top_TDC.v:87]
+INFO: [Synth 8-11241] undeclared symbol 'clock_signal', assumed default net type 'wire' [C:/Users/Darshana/Documents/GitHub/JitFilt/JitFilt-PLL/EXP1/FPGA2/FPGA2/FPGA2.srcs/sources_1/new/top_TDC.v:287]
+INFO: [Synth 8-6157] synthesizing module 'top_TDC_ZED_BOARD' [C:/Users/Darshana/Documents/GitHub/JitFilt/JitFilt-PLL/EXP1/FPGA2/FPGA2/FPGA2.srcs/sources_1/new/top_TDC.v:7]
+INFO: [Synth 8-6157] synthesizing module 'uart_tx' [C:/Users/Darshana/Documents/GitHub/JitFilt/JitFilt-PLL/EXP1/FPGA2/FPGA2/FPGA2.srcs/sources_1/imports/ZEDBOARD-On-ChipSensors/uartTX.v:36]
+INFO: [Synth 8-6155] done synthesizing module 'uart_tx' (0#1) [C:/Users/Darshana/Documents/GitHub/JitFilt/JitFilt-PLL/EXP1/FPGA2/FPGA2/FPGA2.srcs/sources_1/imports/ZEDBOARD-On-ChipSensors/uartTX.v:36]
+INFO: [Synth 8-6157] synthesizing module 'uart_rx' [C:/Users/Darshana/Documents/GitHub/JitFilt/JitFilt-PLL/EXP1/FPGA2/FPGA2/FPGA2.srcs/sources_1/imports/ZEDBOARD-On-ChipSensors/uartrx.v:14]
+INFO: [Synth 8-6155] done synthesizing module 'uart_rx' (0#1) [C:/Users/Darshana/Documents/GitHub/JitFilt/JitFilt-PLL/EXP1/FPGA2/FPGA2/FPGA2.srcs/sources_1/imports/ZEDBOARD-On-ChipSensors/uartrx.v:14]
+INFO: [Synth 8-6157] synthesizing module 'PLL_instance' [C:/Users/Darshana/Documents/GitHub/JitFilt/JitFilt-PLL/EXP1/FPGA2/FPGA2/FPGA2.srcs/sources_1/new/PLL_instance.v:23]
 INFO: [Synth 8-6157] synthesizing module 'PLLE2_BASE' [C:/Xilinx/Vivado/2023.2/scripts/rt/data/unisim_comp.v:111430]
 	Parameter BANDWIDTH bound to: OPTIMIZED - type: string 
 	Parameter CLKFBOUT_MULT bound to: 12 - type: integer 
@@ -74,8 +74,8 @@ INFO: [Synth 8-6157] synthesizing module 'PLLE2_BASE' [C:/Xilinx/Vivado/2023.2/s
 	Parameter REF_JITTER1 bound to: 0.000000 - type: double 
 	Parameter STARTUP_WAIT bound to: FALSE - type: string 
 INFO: [Synth 8-6155] done synthesizing module 'PLLE2_BASE' (0#1) [C:/Xilinx/Vivado/2023.2/scripts/rt/data/unisim_comp.v:111430]
-INFO: [Synth 8-6155] done synthesizing module 'PLL_instance' (0#1) [C:/Users/Darshana/Documents/GitHub/JitFilt/ESP1/FPGA2/FPGA2/FPGA2.srcs/sources_1/new/PLL_instance.v:23]
-INFO: [Synth 8-6157] synthesizing module 'tdc_top' [C:/Users/Darshana/Documents/GitHub/JitFilt/ESP1/FPGA2/FPGA2/FPGA2.srcs/sources_1/imports/ZEDBOARD-On-ChipSensors/tdc_top.v:130]
+INFO: [Synth 8-6155] done synthesizing module 'PLL_instance' (0#1) [C:/Users/Darshana/Documents/GitHub/JitFilt/JitFilt-PLL/EXP1/FPGA2/FPGA2/FPGA2.srcs/sources_1/new/PLL_instance.v:23]
+INFO: [Synth 8-6157] synthesizing module 'tdc_top' [C:/Users/Darshana/Documents/GitHub/JitFilt/JitFilt-PLL/EXP1/FPGA2/FPGA2/FPGA2.srcs/sources_1/imports/ZEDBOARD-On-ChipSensors/tdc_top.v:5]
 INFO: [Synth 8-6157] synthesizing module 'CARRY4' [C:/Xilinx/Vivado/2023.2/scripts/rt/data/unisim_comp.v:2366]
 INFO: [Synth 8-6155] done synthesizing module 'CARRY4' (0#1) [C:/Xilinx/Vivado/2023.2/scripts/rt/data/unisim_comp.v:2366]
 INFO: [Synth 8-6157] synthesizing module 'LDPE' [C:/Xilinx/Vivado/2023.2/scripts/rt/data/unisim_comp.v:81167]
@@ -87,156 +87,156 @@ INFO: [Synth 8-6155] done synthesizing module 'LUT5' (0#1) [C:/Xilinx/Vivado/202
 INFO: [Synth 8-6157] synthesizing module 'LDCE' [C:/Xilinx/Vivado/2023.2/scripts/rt/data/unisim_comp.v:81006]
 	Parameter INIT bound to: 1'b0 
 INFO: [Synth 8-6155] done synthesizing module 'LDCE' (0#1) [C:/Xilinx/Vivado/2023.2/scripts/rt/data/unisim_comp.v:81006]
-INFO: [Synth 8-6155] done synthesizing module 'tdc_top' (0#1) [C:/Users/Darshana/Documents/GitHub/JitFilt/ESP1/FPGA2/FPGA2/FPGA2.srcs/sources_1/imports/ZEDBOARD-On-ChipSensors/tdc_top.v:130]
-INFO: [Synth 8-638] synthesizing module 'tdc_decode' [C:/Users/Darshana/Documents/GitHub/JitFilt/ESP1/FPGA2/FPGA2/FPGA2.srcs/sources_1/imports/ZEDBOARD-On-ChipSensors/tdc_decode.vhd:32]
-INFO: [Synth 8-256] done synthesizing module 'tdc_decode' (0#1) [C:/Users/Darshana/Documents/GitHub/JitFilt/ESP1/FPGA2/FPGA2/FPGA2.srcs/sources_1/imports/ZEDBOARD-On-ChipSensors/tdc_decode.vhd:32]
-INFO: [Synth 8-6155] done synthesizing module 'top_TDC_ZED_BOARD' (0#1) [C:/Users/Darshana/Documents/GitHub/JitFilt/ESP1/FPGA2/FPGA2/FPGA2.srcs/sources_1/new/top_TDC.v:8]
-WARNING: [Synth 8-6014] Unused sequential element trig_reg_reg was removed.  [C:/Users/Darshana/Documents/GitHub/JitFilt/ESP1/FPGA2/FPGA2/FPGA2.srcs/sources_1/new/top_TDC.v:135]
-WARNING: [Synth 8-6014] Unused sequential element delay_counter_reg was removed.  [C:/Users/Darshana/Documents/GitHub/JitFilt/ESP1/FPGA2/FPGA2/FPGA2.srcs/sources_1/new/top_TDC.v:218]
+INFO: [Synth 8-6155] done synthesizing module 'tdc_top' (0#1) [C:/Users/Darshana/Documents/GitHub/JitFilt/JitFilt-PLL/EXP1/FPGA2/FPGA2/FPGA2.srcs/sources_1/imports/ZEDBOARD-On-ChipSensors/tdc_top.v:5]
+INFO: [Synth 8-638] synthesizing module 'tdc_decode' [C:/Users/Darshana/Documents/GitHub/JitFilt/JitFilt-PLL/EXP1/FPGA2/FPGA2/FPGA2.srcs/sources_1/imports/ZEDBOARD-On-ChipSensors/tdc_decode.vhd:32]
+INFO: [Synth 8-256] done synthesizing module 'tdc_decode' (0#1) [C:/Users/Darshana/Documents/GitHub/JitFilt/JitFilt-PLL/EXP1/FPGA2/FPGA2/FPGA2.srcs/sources_1/imports/ZEDBOARD-On-ChipSensors/tdc_decode.vhd:32]
+INFO: [Synth 8-6155] done synthesizing module 'top_TDC_ZED_BOARD' (0#1) [C:/Users/Darshana/Documents/GitHub/JitFilt/JitFilt-PLL/EXP1/FPGA2/FPGA2/FPGA2.srcs/sources_1/new/top_TDC.v:7]
+WARNING: [Synth 8-6014] Unused sequential element trig_reg_reg was removed.  [C:/Users/Darshana/Documents/GitHub/JitFilt/JitFilt-PLL/EXP1/FPGA2/FPGA2/FPGA2.srcs/sources_1/new/top_TDC.v:134]
+WARNING: [Synth 8-6014] Unused sequential element delay_counter_reg was removed.  [C:/Users/Darshana/Documents/GitHub/JitFilt/JitFilt-PLL/EXP1/FPGA2/FPGA2/FPGA2.srcs/sources_1/new/top_TDC.v:217]
 WARNING: [Synth 8-7129] Port rx in module top_TDC_ZED_BOARD is either unconnected or has no load
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 1537.285 ; gain = 562.527
+Finished RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 1538.391 ; gain = 563.559
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 1537.285 ; gain = 562.527
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 1538.391 ; gain = 563.559
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 1537.285 ; gain = 562.527
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 1538.391 ; gain = 563.559
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.081 . Memory (MB): peak = 1537.285 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.081 . Memory (MB): peak = 1538.391 ; gain = 0.000
 INFO: [Netlist 29-17] Analyzing 81 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
-Parsing XDC File [C:/Users/Darshana/Documents/GitHub/JitFilt/ESP1/FPGA2/FPGA2/FPGA2.srcs/constrs_1/imports/new/our_constraints.xdc]
-WARNING: [Vivado 12-507] No nets matched 'clk_IBUF'. [C:/Users/Darshana/Documents/GitHub/JitFilt/ESP1/FPGA2/FPGA2/FPGA2.srcs/constrs_1/imports/new/our_constraints.xdc:65]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Darshana/Documents/GitHub/JitFilt/ESP1/FPGA2/FPGA2/FPGA2.srcs/constrs_1/imports/new/our_constraints.xdc:65]
+Parsing XDC File [C:/Users/Darshana/Documents/GitHub/JitFilt/JitFilt-PLL/EXP1/FPGA2/FPGA2/FPGA2.srcs/constrs_1/imports/new/our_constraints.xdc]
+WARNING: [Vivado 12-507] No nets matched 'clk_IBUF'. [C:/Users/Darshana/Documents/GitHub/JitFilt/JitFilt-PLL/EXP1/FPGA2/FPGA2/FPGA2.srcs/constrs_1/imports/new/our_constraints.xdc:65]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Darshana/Documents/GitHub/JitFilt/JitFilt-PLL/EXP1/FPGA2/FPGA2/FPGA2.srcs/constrs_1/imports/new/our_constraints.xdc:65]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched '[get_ports -of_objects [get_iobanks 33]]'. [C:/Users/Darshana/Documents/GitHub/JitFilt/ESP1/FPGA2/FPGA2/FPGA2.srcs/constrs_1/imports/new/our_constraints.xdc:364]
-WARNING: [Vivado 12-584] No ports matched '[get_ports -of_objects [get_iobanks 13]]'. [C:/Users/Darshana/Documents/GitHub/JitFilt/ESP1/FPGA2/FPGA2/FPGA2.srcs/constrs_1/imports/new/our_constraints.xdc:375]
-WARNING: [Vivado 12-4775] Pblock ranges need to include all sites of a tile. The following ranges will be automatically aligned to a tile boundary: SLICE_X42Y44:SLICE_X43Y44 [C:/Users/Darshana/Documents/GitHub/JitFilt/ESP1/FPGA2/FPGA2/FPGA2.srcs/constrs_1/imports/new/our_constraints.xdc:386]
-WARNING: [Vivado 12-4775] Pblock ranges need to include all sites of a tile. The following ranges will be automatically aligned to a tile boundary: SLICE_X42Y43:SLICE_X43Y43 [C:/Users/Darshana/Documents/GitHub/JitFilt/ESP1/FPGA2/FPGA2/FPGA2.srcs/constrs_1/imports/new/our_constraints.xdc:392]
-WARNING: [Vivado 12-4775] Pblock ranges need to include all sites of a tile. The following ranges will be automatically aligned to a tile boundary: SLICE_X42Y42:SLICE_X43Y42 [C:/Users/Darshana/Documents/GitHub/JitFilt/ESP1/FPGA2/FPGA2/FPGA2.srcs/constrs_1/imports/new/our_constraints.xdc:398]
-WARNING: [Vivado 12-4775] Pblock ranges need to include all sites of a tile. The following ranges will be automatically aligned to a tile boundary: SLICE_X42Y41:SLICE_X43Y41 [C:/Users/Darshana/Documents/GitHub/JitFilt/ESP1/FPGA2/FPGA2/FPGA2.srcs/constrs_1/imports/new/our_constraints.xdc:404]
-WARNING: [Vivado 12-4775] Pblock ranges need to include all sites of a tile. The following ranges will be automatically aligned to a tile boundary: SLICE_X42Y40:SLICE_X43Y40 [C:/Users/Darshana/Documents/GitHub/JitFilt/ESP1/FPGA2/FPGA2/FPGA2.srcs/constrs_1/imports/new/our_constraints.xdc:410]
-WARNING: [Vivado 12-4775] Pblock ranges need to include all sites of a tile. The following ranges will be automatically aligned to a tile boundary: SLICE_X42Y39:SLICE_X43Y39 [C:/Users/Darshana/Documents/GitHub/JitFilt/ESP1/FPGA2/FPGA2/FPGA2.srcs/constrs_1/imports/new/our_constraints.xdc:416]
-WARNING: [Vivado 12-4775] Pblock ranges need to include all sites of a tile. The following ranges will be automatically aligned to a tile boundary: SLICE_X42Y38:SLICE_X43Y38 [C:/Users/Darshana/Documents/GitHub/JitFilt/ESP1/FPGA2/FPGA2/FPGA2.srcs/constrs_1/imports/new/our_constraints.xdc:422]
-WARNING: [Vivado 12-4775] Pblock ranges need to include all sites of a tile. The following ranges will be automatically aligned to a tile boundary: SLICE_X42Y37:SLICE_X43Y37 [C:/Users/Darshana/Documents/GitHub/JitFilt/ESP1/FPGA2/FPGA2/FPGA2.srcs/constrs_1/imports/new/our_constraints.xdc:428]
-WARNING: [Vivado 12-4775] Pblock ranges need to include all sites of a tile. The following ranges will be automatically aligned to a tile boundary: SLICE_X42Y36:SLICE_X43Y36 [C:/Users/Darshana/Documents/GitHub/JitFilt/ESP1/FPGA2/FPGA2/FPGA2.srcs/constrs_1/imports/new/our_constraints.xdc:434]
-WARNING: [Vivado 12-4775] Pblock ranges need to include all sites of a tile. The following ranges will be automatically aligned to a tile boundary: SLICE_X42Y35:SLICE_X43Y35 [C:/Users/Darshana/Documents/GitHub/JitFilt/ESP1/FPGA2/FPGA2/FPGA2.srcs/constrs_1/imports/new/our_constraints.xdc:440]
-WARNING: [Vivado 12-4775] Pblock ranges need to include all sites of a tile. The following ranges will be automatically aligned to a tile boundary: SLICE_X42Y34:SLICE_X43Y34 [C:/Users/Darshana/Documents/GitHub/JitFilt/ESP1/FPGA2/FPGA2/FPGA2.srcs/constrs_1/imports/new/our_constraints.xdc:446]
-WARNING: [Vivado 12-4775] Pblock ranges need to include all sites of a tile. The following ranges will be automatically aligned to a tile boundary: SLICE_X42Y33:SLICE_X43Y33 [C:/Users/Darshana/Documents/GitHub/JitFilt/ESP1/FPGA2/FPGA2/FPGA2.srcs/constrs_1/imports/new/our_constraints.xdc:452]
-WARNING: [Vivado 12-4775] Pblock ranges need to include all sites of a tile. The following ranges will be automatically aligned to a tile boundary: SLICE_X42Y32:SLICE_X43Y32 [C:/Users/Darshana/Documents/GitHub/JitFilt/ESP1/FPGA2/FPGA2/FPGA2.srcs/constrs_1/imports/new/our_constraints.xdc:459]
-WARNING: [Vivado 12-4775] Pblock ranges need to include all sites of a tile. The following ranges will be automatically aligned to a tile boundary: SLICE_X42Y31:SLICE_X43Y31 [C:/Users/Darshana/Documents/GitHub/JitFilt/ESP1/FPGA2/FPGA2/FPGA2.srcs/constrs_1/imports/new/our_constraints.xdc:465]
-WARNING: [Vivado 12-4775] Pblock ranges need to include all sites of a tile. The following ranges will be automatically aligned to a tile boundary: SLICE_X42Y30:SLICE_X43Y30 [C:/Users/Darshana/Documents/GitHub/JitFilt/ESP1/FPGA2/FPGA2/FPGA2.srcs/constrs_1/imports/new/our_constraints.xdc:471]
-WARNING: [Vivado 12-4775] Pblock ranges need to include all sites of a tile. The following ranges will be automatically aligned to a tile boundary: SLICE_X42Y29:SLICE_X43Y29 [C:/Users/Darshana/Documents/GitHub/JitFilt/ESP1/FPGA2/FPGA2/FPGA2.srcs/constrs_1/imports/new/our_constraints.xdc:477]
-WARNING: [Vivado 12-4775] Pblock ranges need to include all sites of a tile. The following ranges will be automatically aligned to a tile boundary: SLICE_X42Y28:SLICE_X43Y28 [C:/Users/Darshana/Documents/GitHub/JitFilt/ESP1/FPGA2/FPGA2/FPGA2.srcs/constrs_1/imports/new/our_constraints.xdc:483]
-WARNING: [Vivado 12-4775] Pblock ranges need to include all sites of a tile. The following ranges will be automatically aligned to a tile boundary: SLICE_X42Y27:SLICE_X43Y27 [C:/Users/Darshana/Documents/GitHub/JitFilt/ESP1/FPGA2/FPGA2/FPGA2.srcs/constrs_1/imports/new/our_constraints.xdc:489]
-WARNING: [Vivado 12-4775] Pblock ranges need to include all sites of a tile. The following ranges will be automatically aligned to a tile boundary: SLICE_X42Y26:SLICE_X43Y26 [C:/Users/Darshana/Documents/GitHub/JitFilt/ESP1/FPGA2/FPGA2/FPGA2.srcs/constrs_1/imports/new/our_constraints.xdc:495]
-WARNING: [Vivado 12-4775] Pblock ranges need to include all sites of a tile. The following ranges will be automatically aligned to a tile boundary: SLICE_X42Y25:SLICE_X43Y25 [C:/Users/Darshana/Documents/GitHub/JitFilt/ESP1/FPGA2/FPGA2/FPGA2.srcs/constrs_1/imports/new/our_constraints.xdc:501]
-WARNING: [Vivado 12-4775] Pblock ranges need to include all sites of a tile. The following ranges will be automatically aligned to a tile boundary: SLICE_X42Y24:SLICE_X43Y24 [C:/Users/Darshana/Documents/GitHub/JitFilt/ESP1/FPGA2/FPGA2/FPGA2.srcs/constrs_1/imports/new/our_constraints.xdc:507]
-WARNING: [Vivado 12-4775] Pblock ranges need to include all sites of a tile. The following ranges will be automatically aligned to a tile boundary: SLICE_X42Y23:SLICE_X43Y23 [C:/Users/Darshana/Documents/GitHub/JitFilt/ESP1/FPGA2/FPGA2/FPGA2.srcs/constrs_1/imports/new/our_constraints.xdc:513]
-WARNING: [Vivado 12-4775] Pblock ranges need to include all sites of a tile. The following ranges will be automatically aligned to a tile boundary: SLICE_X42Y22:SLICE_X43Y22 [C:/Users/Darshana/Documents/GitHub/JitFilt/ESP1/FPGA2/FPGA2/FPGA2.srcs/constrs_1/imports/new/our_constraints.xdc:519]
-WARNING: [Vivado 12-4775] Pblock ranges need to include all sites of a tile. The following ranges will be automatically aligned to a tile boundary: SLICE_X42Y21:SLICE_X43Y21 [C:/Users/Darshana/Documents/GitHub/JitFilt/ESP1/FPGA2/FPGA2/FPGA2.srcs/constrs_1/imports/new/our_constraints.xdc:525]
-WARNING: [Vivado 12-4775] Pblock ranges need to include all sites of a tile. The following ranges will be automatically aligned to a tile boundary: SLICE_X42Y20:SLICE_X43Y20 [C:/Users/Darshana/Documents/GitHub/JitFilt/ESP1/FPGA2/FPGA2/FPGA2.srcs/constrs_1/imports/new/our_constraints.xdc:531]
-WARNING: [Vivado 12-4775] Pblock ranges need to include all sites of a tile. The following ranges will be automatically aligned to a tile boundary: SLICE_X42Y19:SLICE_X43Y19 [C:/Users/Darshana/Documents/GitHub/JitFilt/ESP1/FPGA2/FPGA2/FPGA2.srcs/constrs_1/imports/new/our_constraints.xdc:537]
-WARNING: [Vivado 12-4775] Pblock ranges need to include all sites of a tile. The following ranges will be automatically aligned to a tile boundary: SLICE_X42Y18:SLICE_X43Y18 [C:/Users/Darshana/Documents/GitHub/JitFilt/ESP1/FPGA2/FPGA2/FPGA2.srcs/constrs_1/imports/new/our_constraints.xdc:543]
-WARNING: [Vivado 12-4775] Pblock ranges need to include all sites of a tile. The following ranges will be automatically aligned to a tile boundary: SLICE_X42Y17:SLICE_X43Y17 [C:/Users/Darshana/Documents/GitHub/JitFilt/ESP1/FPGA2/FPGA2/FPGA2.srcs/constrs_1/imports/new/our_constraints.xdc:549]
-WARNING: [Vivado 12-4775] Pblock ranges need to include all sites of a tile. The following ranges will be automatically aligned to a tile boundary: SLICE_X42Y16:SLICE_X43Y16 [C:/Users/Darshana/Documents/GitHub/JitFilt/ESP1/FPGA2/FPGA2/FPGA2.srcs/constrs_1/imports/new/our_constraints.xdc:555]
-WARNING: [Vivado 12-4775] Pblock ranges need to include all sites of a tile. The following ranges will be automatically aligned to a tile boundary: SLICE_X42Y15:SLICE_X43Y15 [C:/Users/Darshana/Documents/GitHub/JitFilt/ESP1/FPGA2/FPGA2/FPGA2.srcs/constrs_1/imports/new/our_constraints.xdc:561]
-WARNING: [Vivado 12-4775] Pblock ranges need to include all sites of a tile. The following ranges will be automatically aligned to a tile boundary: SLICE_X42Y14:SLICE_X43Y14 [C:/Users/Darshana/Documents/GitHub/JitFilt/ESP1/FPGA2/FPGA2/FPGA2.srcs/constrs_1/imports/new/our_constraints.xdc:567]
-WARNING: [Vivado 12-4775] Pblock ranges need to include all sites of a tile. The following ranges will be automatically aligned to a tile boundary: SLICE_X42Y13:SLICE_X43Y13 [C:/Users/Darshana/Documents/GitHub/JitFilt/ESP1/FPGA2/FPGA2/FPGA2.srcs/constrs_1/imports/new/our_constraints.xdc:573]
-WARNING: [Vivado 12-4775] Pblock ranges need to include all sites of a tile. The following ranges will be automatically aligned to a tile boundary: SLICE_X42Y12:SLICE_X43Y12 [C:/Users/Darshana/Documents/GitHub/JitFilt/ESP1/FPGA2/FPGA2/FPGA2.srcs/constrs_1/imports/new/our_constraints.xdc:579]
-WARNING: [Vivado 12-4775] Pblock ranges need to include all sites of a tile. The following ranges will be automatically aligned to a tile boundary: SLICE_X42Y11:SLICE_X43Y11 [C:/Users/Darshana/Documents/GitHub/JitFilt/ESP1/FPGA2/FPGA2/FPGA2.srcs/constrs_1/imports/new/our_constraints.xdc:585]
-WARNING: [Vivado 12-4775] Pblock ranges need to include all sites of a tile. The following ranges will be automatically aligned to a tile boundary: SLICE_X42Y10:SLICE_X43Y10 [C:/Users/Darshana/Documents/GitHub/JitFilt/ESP1/FPGA2/FPGA2/FPGA2.srcs/constrs_1/imports/new/our_constraints.xdc:591]
-WARNING: [Vivado 12-4775] Pblock ranges need to include all sites of a tile. The following ranges will be automatically aligned to a tile boundary: SLICE_X42Y9:SLICE_X43Y9 [C:/Users/Darshana/Documents/GitHub/JitFilt/ESP1/FPGA2/FPGA2/FPGA2.srcs/constrs_1/imports/new/our_constraints.xdc:597]
-WARNING: [Vivado 12-4775] Pblock ranges need to include all sites of a tile. The following ranges will be automatically aligned to a tile boundary: SLICE_X42Y8:SLICE_X43Y8 [C:/Users/Darshana/Documents/GitHub/JitFilt/ESP1/FPGA2/FPGA2/FPGA2.srcs/constrs_1/imports/new/our_constraints.xdc:603]
-WARNING: [Vivado 12-4775] Pblock ranges need to include all sites of a tile. The following ranges will be automatically aligned to a tile boundary: SLICE_X42Y7:SLICE_X43Y7 [C:/Users/Darshana/Documents/GitHub/JitFilt/ESP1/FPGA2/FPGA2/FPGA2.srcs/constrs_1/imports/new/our_constraints.xdc:609]
-WARNING: [Vivado 12-4775] Pblock ranges need to include all sites of a tile. The following ranges will be automatically aligned to a tile boundary: SLICE_X42Y6:SLICE_X43Y6 [C:/Users/Darshana/Documents/GitHub/JitFilt/ESP1/FPGA2/FPGA2/FPGA2.srcs/constrs_1/imports/new/our_constraints.xdc:615]
-WARNING: [Vivado 12-4775] Pblock ranges need to include all sites of a tile. The following ranges will be automatically aligned to a tile boundary: SLICE_X42Y5:SLICE_X43Y5 [C:/Users/Darshana/Documents/GitHub/JitFilt/ESP1/FPGA2/FPGA2/FPGA2.srcs/constrs_1/imports/new/our_constraints.xdc:621]
-WARNING: [Vivado 12-4775] Pblock ranges need to include all sites of a tile. The following ranges will be automatically aligned to a tile boundary: SLICE_X42Y4:SLICE_X43Y4 [C:/Users/Darshana/Documents/GitHub/JitFilt/ESP1/FPGA2/FPGA2/FPGA2.srcs/constrs_1/imports/new/our_constraints.xdc:628]
-WARNING: [Vivado 12-4775] Pblock ranges need to include all sites of a tile. The following ranges will be automatically aligned to a tile boundary: SLICE_X42Y3:SLICE_X43Y3 [C:/Users/Darshana/Documents/GitHub/JitFilt/ESP1/FPGA2/FPGA2/FPGA2.srcs/constrs_1/imports/new/our_constraints.xdc:633]
-WARNING: [Vivado 12-4775] Pblock ranges need to include all sites of a tile. The following ranges will be automatically aligned to a tile boundary: SLICE_X42Y2:SLICE_X43Y2 [C:/Users/Darshana/Documents/GitHub/JitFilt/ESP1/FPGA2/FPGA2/FPGA2.srcs/constrs_1/imports/new/our_constraints.xdc:638]
-WARNING: [Vivado 12-4775] Pblock ranges need to include all sites of a tile. The following ranges will be automatically aligned to a tile boundary: SLICE_X42Y1:SLICE_X43Y1 [C:/Users/Darshana/Documents/GitHub/JitFilt/ESP1/FPGA2/FPGA2/FPGA2.srcs/constrs_1/imports/new/our_constraints.xdc:643]
-WARNING: [Vivado 12-4775] Pblock ranges need to include all sites of a tile. The following ranges will be automatically aligned to a tile boundary: SLICE_X33Y44:SLICE_X33Y44 [C:/Users/Darshana/Documents/GitHub/JitFilt/ESP1/FPGA2/FPGA2/FPGA2.srcs/constrs_1/imports/new/our_constraints.xdc:919]
-WARNING: [Vivado 12-4775] Pblock ranges need to include all sites of a tile. The following ranges will be automatically aligned to a tile boundary: SLICE_X33Y43:SLICE_X33Y43 [C:/Users/Darshana/Documents/GitHub/JitFilt/ESP1/FPGA2/FPGA2/FPGA2.srcs/constrs_1/imports/new/our_constraints.xdc:925]
-WARNING: [Vivado 12-4775] Pblock ranges need to include all sites of a tile. The following ranges will be automatically aligned to a tile boundary: SLICE_X33Y42:SLICE_X33Y42 [C:/Users/Darshana/Documents/GitHub/JitFilt/ESP1/FPGA2/FPGA2/FPGA2.srcs/constrs_1/imports/new/our_constraints.xdc:931]
-WARNING: [Vivado 12-4775] Pblock ranges need to include all sites of a tile. The following ranges will be automatically aligned to a tile boundary: SLICE_X33Y41:SLICE_X33Y41 [C:/Users/Darshana/Documents/GitHub/JitFilt/ESP1/FPGA2/FPGA2/FPGA2.srcs/constrs_1/imports/new/our_constraints.xdc:937]
-WARNING: [Vivado 12-4775] Pblock ranges need to include all sites of a tile. The following ranges will be automatically aligned to a tile boundary: SLICE_X33Y40:SLICE_X33Y40 [C:/Users/Darshana/Documents/GitHub/JitFilt/ESP1/FPGA2/FPGA2/FPGA2.srcs/constrs_1/imports/new/our_constraints.xdc:943]
-WARNING: [Vivado 12-4775] Pblock ranges need to include all sites of a tile. The following ranges will be automatically aligned to a tile boundary: SLICE_X33Y39:SLICE_X33Y39 [C:/Users/Darshana/Documents/GitHub/JitFilt/ESP1/FPGA2/FPGA2/FPGA2.srcs/constrs_1/imports/new/our_constraints.xdc:949]
-WARNING: [Vivado 12-4775] Pblock ranges need to include all sites of a tile. The following ranges will be automatically aligned to a tile boundary: SLICE_X33Y38:SLICE_X33Y38 [C:/Users/Darshana/Documents/GitHub/JitFilt/ESP1/FPGA2/FPGA2/FPGA2.srcs/constrs_1/imports/new/our_constraints.xdc:955]
-WARNING: [Vivado 12-4775] Pblock ranges need to include all sites of a tile. The following ranges will be automatically aligned to a tile boundary: SLICE_X33Y37:SLICE_X33Y37 [C:/Users/Darshana/Documents/GitHub/JitFilt/ESP1/FPGA2/FPGA2/FPGA2.srcs/constrs_1/imports/new/our_constraints.xdc:961]
-WARNING: [Vivado 12-4775] Pblock ranges need to include all sites of a tile. The following ranges will be automatically aligned to a tile boundary: SLICE_X33Y36:SLICE_X33Y36 [C:/Users/Darshana/Documents/GitHub/JitFilt/ESP1/FPGA2/FPGA2/FPGA2.srcs/constrs_1/imports/new/our_constraints.xdc:967]
-WARNING: [Vivado 12-4775] Pblock ranges need to include all sites of a tile. The following ranges will be automatically aligned to a tile boundary: SLICE_X33Y35:SLICE_X33Y35 [C:/Users/Darshana/Documents/GitHub/JitFilt/ESP1/FPGA2/FPGA2/FPGA2.srcs/constrs_1/imports/new/our_constraints.xdc:973]
-WARNING: [Vivado 12-4775] Pblock ranges need to include all sites of a tile. The following ranges will be automatically aligned to a tile boundary: SLICE_X33Y34:SLICE_X33Y34 [C:/Users/Darshana/Documents/GitHub/JitFilt/ESP1/FPGA2/FPGA2/FPGA2.srcs/constrs_1/imports/new/our_constraints.xdc:979]
-WARNING: [Vivado 12-4775] Pblock ranges need to include all sites of a tile. The following ranges will be automatically aligned to a tile boundary: SLICE_X33Y33:SLICE_X33Y33 [C:/Users/Darshana/Documents/GitHub/JitFilt/ESP1/FPGA2/FPGA2/FPGA2.srcs/constrs_1/imports/new/our_constraints.xdc:985]
-WARNING: [Vivado 12-4775] Pblock ranges need to include all sites of a tile. The following ranges will be automatically aligned to a tile boundary: SLICE_X33Y32:SLICE_X33Y32 [C:/Users/Darshana/Documents/GitHub/JitFilt/ESP1/FPGA2/FPGA2/FPGA2.srcs/constrs_1/imports/new/our_constraints.xdc:992]
-WARNING: [Vivado 12-4775] Pblock ranges need to include all sites of a tile. The following ranges will be automatically aligned to a tile boundary: SLICE_X33Y31:SLICE_X33Y31 [C:/Users/Darshana/Documents/GitHub/JitFilt/ESP1/FPGA2/FPGA2/FPGA2.srcs/constrs_1/imports/new/our_constraints.xdc:998]
-WARNING: [Vivado 12-4775] Pblock ranges need to include all sites of a tile. The following ranges will be automatically aligned to a tile boundary: SLICE_X33Y30:SLICE_X33Y30 [C:/Users/Darshana/Documents/GitHub/JitFilt/ESP1/FPGA2/FPGA2/FPGA2.srcs/constrs_1/imports/new/our_constraints.xdc:1004]
-WARNING: [Vivado 12-4775] Pblock ranges need to include all sites of a tile. The following ranges will be automatically aligned to a tile boundary: SLICE_X33Y29:SLICE_X33Y29 [C:/Users/Darshana/Documents/GitHub/JitFilt/ESP1/FPGA2/FPGA2/FPGA2.srcs/constrs_1/imports/new/our_constraints.xdc:1010]
-WARNING: [Vivado 12-4775] Pblock ranges need to include all sites of a tile. The following ranges will be automatically aligned to a tile boundary: SLICE_X33Y28:SLICE_X33Y28 [C:/Users/Darshana/Documents/GitHub/JitFilt/ESP1/FPGA2/FPGA2/FPGA2.srcs/constrs_1/imports/new/our_constraints.xdc:1016]
-WARNING: [Vivado 12-4775] Pblock ranges need to include all sites of a tile. The following ranges will be automatically aligned to a tile boundary: SLICE_X33Y27:SLICE_X33Y27 [C:/Users/Darshana/Documents/GitHub/JitFilt/ESP1/FPGA2/FPGA2/FPGA2.srcs/constrs_1/imports/new/our_constraints.xdc:1022]
-WARNING: [Vivado 12-4775] Pblock ranges need to include all sites of a tile. The following ranges will be automatically aligned to a tile boundary: SLICE_X33Y26:SLICE_X33Y26 [C:/Users/Darshana/Documents/GitHub/JitFilt/ESP1/FPGA2/FPGA2/FPGA2.srcs/constrs_1/imports/new/our_constraints.xdc:1028]
-WARNING: [Vivado 12-4775] Pblock ranges need to include all sites of a tile. The following ranges will be automatically aligned to a tile boundary: SLICE_X33Y25:SLICE_X33Y25 [C:/Users/Darshana/Documents/GitHub/JitFilt/ESP1/FPGA2/FPGA2/FPGA2.srcs/constrs_1/imports/new/our_constraints.xdc:1034]
-WARNING: [Vivado 12-4775] Pblock ranges need to include all sites of a tile. The following ranges will be automatically aligned to a tile boundary: SLICE_X33Y24:SLICE_X33Y24 [C:/Users/Darshana/Documents/GitHub/JitFilt/ESP1/FPGA2/FPGA2/FPGA2.srcs/constrs_1/imports/new/our_constraints.xdc:1040]
-WARNING: [Vivado 12-4775] Pblock ranges need to include all sites of a tile. The following ranges will be automatically aligned to a tile boundary: SLICE_X33Y23:SLICE_X33Y23 [C:/Users/Darshana/Documents/GitHub/JitFilt/ESP1/FPGA2/FPGA2/FPGA2.srcs/constrs_1/imports/new/our_constraints.xdc:1046]
-WARNING: [Vivado 12-4775] Pblock ranges need to include all sites of a tile. The following ranges will be automatically aligned to a tile boundary: SLICE_X33Y22:SLICE_X33Y22 [C:/Users/Darshana/Documents/GitHub/JitFilt/ESP1/FPGA2/FPGA2/FPGA2.srcs/constrs_1/imports/new/our_constraints.xdc:1052]
-WARNING: [Vivado 12-4775] Pblock ranges need to include all sites of a tile. The following ranges will be automatically aligned to a tile boundary: SLICE_X33Y21:SLICE_X33Y21 [C:/Users/Darshana/Documents/GitHub/JitFilt/ESP1/FPGA2/FPGA2/FPGA2.srcs/constrs_1/imports/new/our_constraints.xdc:1058]
-WARNING: [Vivado 12-4775] Pblock ranges need to include all sites of a tile. The following ranges will be automatically aligned to a tile boundary: SLICE_X33Y20:SLICE_X33Y20 [C:/Users/Darshana/Documents/GitHub/JitFilt/ESP1/FPGA2/FPGA2/FPGA2.srcs/constrs_1/imports/new/our_constraints.xdc:1064]
-WARNING: [Vivado 12-4775] Pblock ranges need to include all sites of a tile. The following ranges will be automatically aligned to a tile boundary: SLICE_X33Y19:SLICE_X33Y19 [C:/Users/Darshana/Documents/GitHub/JitFilt/ESP1/FPGA2/FPGA2/FPGA2.srcs/constrs_1/imports/new/our_constraints.xdc:1070]
-WARNING: [Vivado 12-4775] Pblock ranges need to include all sites of a tile. The following ranges will be automatically aligned to a tile boundary: SLICE_X33Y18:SLICE_X33Y18 [C:/Users/Darshana/Documents/GitHub/JitFilt/ESP1/FPGA2/FPGA2/FPGA2.srcs/constrs_1/imports/new/our_constraints.xdc:1076]
-WARNING: [Vivado 12-4775] Pblock ranges need to include all sites of a tile. The following ranges will be automatically aligned to a tile boundary: SLICE_X33Y17:SLICE_X33Y17 [C:/Users/Darshana/Documents/GitHub/JitFilt/ESP1/FPGA2/FPGA2/FPGA2.srcs/constrs_1/imports/new/our_constraints.xdc:1082]
-WARNING: [Vivado 12-4775] Pblock ranges need to include all sites of a tile. The following ranges will be automatically aligned to a tile boundary: SLICE_X33Y16:SLICE_X33Y16 [C:/Users/Darshana/Documents/GitHub/JitFilt/ESP1/FPGA2/FPGA2/FPGA2.srcs/constrs_1/imports/new/our_constraints.xdc:1088]
-WARNING: [Vivado 12-4775] Pblock ranges need to include all sites of a tile. The following ranges will be automatically aligned to a tile boundary: SLICE_X33Y15:SLICE_X33Y15 [C:/Users/Darshana/Documents/GitHub/JitFilt/ESP1/FPGA2/FPGA2/FPGA2.srcs/constrs_1/imports/new/our_constraints.xdc:1094]
-WARNING: [Vivado 12-4775] Pblock ranges need to include all sites of a tile. The following ranges will be automatically aligned to a tile boundary: SLICE_X33Y14:SLICE_X33Y14 [C:/Users/Darshana/Documents/GitHub/JitFilt/ESP1/FPGA2/FPGA2/FPGA2.srcs/constrs_1/imports/new/our_constraints.xdc:1100]
-WARNING: [Vivado 12-4775] Pblock ranges need to include all sites of a tile. The following ranges will be automatically aligned to a tile boundary: SLICE_X33Y13:SLICE_X33Y13 [C:/Users/Darshana/Documents/GitHub/JitFilt/ESP1/FPGA2/FPGA2/FPGA2.srcs/constrs_1/imports/new/our_constraints.xdc:1106]
-WARNING: [Vivado 12-4775] Pblock ranges need to include all sites of a tile. The following ranges will be automatically aligned to a tile boundary: SLICE_X33Y12:SLICE_X33Y12 [C:/Users/Darshana/Documents/GitHub/JitFilt/ESP1/FPGA2/FPGA2/FPGA2.srcs/constrs_1/imports/new/our_constraints.xdc:1112]
-WARNING: [Vivado 12-4775] Pblock ranges need to include all sites of a tile. The following ranges will be automatically aligned to a tile boundary: SLICE_X33Y11:SLICE_X33Y11 [C:/Users/Darshana/Documents/GitHub/JitFilt/ESP1/FPGA2/FPGA2/FPGA2.srcs/constrs_1/imports/new/our_constraints.xdc:1118]
-WARNING: [Vivado 12-4775] Pblock ranges need to include all sites of a tile. The following ranges will be automatically aligned to a tile boundary: SLICE_X33Y10:SLICE_X33Y10 [C:/Users/Darshana/Documents/GitHub/JitFilt/ESP1/FPGA2/FPGA2/FPGA2.srcs/constrs_1/imports/new/our_constraints.xdc:1124]
-WARNING: [Vivado 12-4775] Pblock ranges need to include all sites of a tile. The following ranges will be automatically aligned to a tile boundary: SLICE_X33Y9:SLICE_X33Y9 [C:/Users/Darshana/Documents/GitHub/JitFilt/ESP1/FPGA2/FPGA2/FPGA2.srcs/constrs_1/imports/new/our_constraints.xdc:1130]
-WARNING: [Vivado 12-4775] Pblock ranges need to include all sites of a tile. The following ranges will be automatically aligned to a tile boundary: SLICE_X33Y8:SLICE_X33Y8 [C:/Users/Darshana/Documents/GitHub/JitFilt/ESP1/FPGA2/FPGA2/FPGA2.srcs/constrs_1/imports/new/our_constraints.xdc:1136]
-WARNING: [Vivado 12-4775] Pblock ranges need to include all sites of a tile. The following ranges will be automatically aligned to a tile boundary: SLICE_X33Y7:SLICE_X33Y7 [C:/Users/Darshana/Documents/GitHub/JitFilt/ESP1/FPGA2/FPGA2/FPGA2.srcs/constrs_1/imports/new/our_constraints.xdc:1143]
-WARNING: [Vivado 12-4775] Pblock ranges need to include all sites of a tile. The following ranges will be automatically aligned to a tile boundary: SLICE_X33Y6:SLICE_X33Y6 [C:/Users/Darshana/Documents/GitHub/JitFilt/ESP1/FPGA2/FPGA2/FPGA2.srcs/constrs_1/imports/new/our_constraints.xdc:1150]
-WARNING: [Vivado 12-4775] Pblock ranges need to include all sites of a tile. The following ranges will be automatically aligned to a tile boundary: SLICE_X33Y5:SLICE_X33Y5 [C:/Users/Darshana/Documents/GitHub/JitFilt/ESP1/FPGA2/FPGA2/FPGA2.srcs/constrs_1/imports/new/our_constraints.xdc:1157]
-WARNING: [Vivado 12-4775] Pblock ranges need to include all sites of a tile. The following ranges will be automatically aligned to a tile boundary: SLICE_X33Y4:SLICE_X33Y4 [C:/Users/Darshana/Documents/GitHub/JitFilt/ESP1/FPGA2/FPGA2/FPGA2.srcs/constrs_1/imports/new/our_constraints.xdc:1164]
-WARNING: [Vivado 12-4775] Pblock ranges need to include all sites of a tile. The following ranges will be automatically aligned to a tile boundary: SLICE_X33Y3:SLICE_X33Y3 [C:/Users/Darshana/Documents/GitHub/JitFilt/ESP1/FPGA2/FPGA2/FPGA2.srcs/constrs_1/imports/new/our_constraints.xdc:1169]
-WARNING: [Vivado 12-4775] Pblock ranges need to include all sites of a tile. The following ranges will be automatically aligned to a tile boundary: SLICE_X33Y2:SLICE_X33Y2 [C:/Users/Darshana/Documents/GitHub/JitFilt/ESP1/FPGA2/FPGA2/FPGA2.srcs/constrs_1/imports/new/our_constraints.xdc:1174]
-WARNING: [Vivado 12-4775] Pblock ranges need to include all sites of a tile. The following ranges will be automatically aligned to a tile boundary: SLICE_X33Y1:SLICE_X33Y1 [C:/Users/Darshana/Documents/GitHub/JitFilt/ESP1/FPGA2/FPGA2/FPGA2.srcs/constrs_1/imports/new/our_constraints.xdc:1179]
-Finished Parsing XDC File [C:/Users/Darshana/Documents/GitHub/JitFilt/ESP1/FPGA2/FPGA2/FPGA2.srcs/constrs_1/imports/new/our_constraints.xdc]
-INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/Darshana/Documents/GitHub/JitFilt/ESP1/FPGA2/FPGA2/FPGA2.srcs/constrs_1/imports/new/our_constraints.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/top_TDC_ZED_BOARD_propImpl.xdc].
+WARNING: [Vivado 12-584] No ports matched '[get_ports -of_objects [get_iobanks 33]]'. [C:/Users/Darshana/Documents/GitHub/JitFilt/JitFilt-PLL/EXP1/FPGA2/FPGA2/FPGA2.srcs/constrs_1/imports/new/our_constraints.xdc:364]
+WARNING: [Vivado 12-584] No ports matched '[get_ports -of_objects [get_iobanks 13]]'. [C:/Users/Darshana/Documents/GitHub/JitFilt/JitFilt-PLL/EXP1/FPGA2/FPGA2/FPGA2.srcs/constrs_1/imports/new/our_constraints.xdc:375]
+WARNING: [Vivado 12-4775] Pblock ranges need to include all sites of a tile. The following ranges will be automatically aligned to a tile boundary: SLICE_X42Y44:SLICE_X43Y44 [C:/Users/Darshana/Documents/GitHub/JitFilt/JitFilt-PLL/EXP1/FPGA2/FPGA2/FPGA2.srcs/constrs_1/imports/new/our_constraints.xdc:386]
+WARNING: [Vivado 12-4775] Pblock ranges need to include all sites of a tile. The following ranges will be automatically aligned to a tile boundary: SLICE_X42Y43:SLICE_X43Y43 [C:/Users/Darshana/Documents/GitHub/JitFilt/JitFilt-PLL/EXP1/FPGA2/FPGA2/FPGA2.srcs/constrs_1/imports/new/our_constraints.xdc:392]
+WARNING: [Vivado 12-4775] Pblock ranges need to include all sites of a tile. The following ranges will be automatically aligned to a tile boundary: SLICE_X42Y42:SLICE_X43Y42 [C:/Users/Darshana/Documents/GitHub/JitFilt/JitFilt-PLL/EXP1/FPGA2/FPGA2/FPGA2.srcs/constrs_1/imports/new/our_constraints.xdc:398]
+WARNING: [Vivado 12-4775] Pblock ranges need to include all sites of a tile. The following ranges will be automatically aligned to a tile boundary: SLICE_X42Y41:SLICE_X43Y41 [C:/Users/Darshana/Documents/GitHub/JitFilt/JitFilt-PLL/EXP1/FPGA2/FPGA2/FPGA2.srcs/constrs_1/imports/new/our_constraints.xdc:404]
+WARNING: [Vivado 12-4775] Pblock ranges need to include all sites of a tile. The following ranges will be automatically aligned to a tile boundary: SLICE_X42Y40:SLICE_X43Y40 [C:/Users/Darshana/Documents/GitHub/JitFilt/JitFilt-PLL/EXP1/FPGA2/FPGA2/FPGA2.srcs/constrs_1/imports/new/our_constraints.xdc:410]
+WARNING: [Vivado 12-4775] Pblock ranges need to include all sites of a tile. The following ranges will be automatically aligned to a tile boundary: SLICE_X42Y39:SLICE_X43Y39 [C:/Users/Darshana/Documents/GitHub/JitFilt/JitFilt-PLL/EXP1/FPGA2/FPGA2/FPGA2.srcs/constrs_1/imports/new/our_constraints.xdc:416]
+WARNING: [Vivado 12-4775] Pblock ranges need to include all sites of a tile. The following ranges will be automatically aligned to a tile boundary: SLICE_X42Y38:SLICE_X43Y38 [C:/Users/Darshana/Documents/GitHub/JitFilt/JitFilt-PLL/EXP1/FPGA2/FPGA2/FPGA2.srcs/constrs_1/imports/new/our_constraints.xdc:422]
+WARNING: [Vivado 12-4775] Pblock ranges need to include all sites of a tile. The following ranges will be automatically aligned to a tile boundary: SLICE_X42Y37:SLICE_X43Y37 [C:/Users/Darshana/Documents/GitHub/JitFilt/JitFilt-PLL/EXP1/FPGA2/FPGA2/FPGA2.srcs/constrs_1/imports/new/our_constraints.xdc:428]
+WARNING: [Vivado 12-4775] Pblock ranges need to include all sites of a tile. The following ranges will be automatically aligned to a tile boundary: SLICE_X42Y36:SLICE_X43Y36 [C:/Users/Darshana/Documents/GitHub/JitFilt/JitFilt-PLL/EXP1/FPGA2/FPGA2/FPGA2.srcs/constrs_1/imports/new/our_constraints.xdc:434]
+WARNING: [Vivado 12-4775] Pblock ranges need to include all sites of a tile. The following ranges will be automatically aligned to a tile boundary: SLICE_X42Y35:SLICE_X43Y35 [C:/Users/Darshana/Documents/GitHub/JitFilt/JitFilt-PLL/EXP1/FPGA2/FPGA2/FPGA2.srcs/constrs_1/imports/new/our_constraints.xdc:440]
+WARNING: [Vivado 12-4775] Pblock ranges need to include all sites of a tile. The following ranges will be automatically aligned to a tile boundary: SLICE_X42Y34:SLICE_X43Y34 [C:/Users/Darshana/Documents/GitHub/JitFilt/JitFilt-PLL/EXP1/FPGA2/FPGA2/FPGA2.srcs/constrs_1/imports/new/our_constraints.xdc:446]
+WARNING: [Vivado 12-4775] Pblock ranges need to include all sites of a tile. The following ranges will be automatically aligned to a tile boundary: SLICE_X42Y33:SLICE_X43Y33 [C:/Users/Darshana/Documents/GitHub/JitFilt/JitFilt-PLL/EXP1/FPGA2/FPGA2/FPGA2.srcs/constrs_1/imports/new/our_constraints.xdc:452]
+WARNING: [Vivado 12-4775] Pblock ranges need to include all sites of a tile. The following ranges will be automatically aligned to a tile boundary: SLICE_X42Y32:SLICE_X43Y32 [C:/Users/Darshana/Documents/GitHub/JitFilt/JitFilt-PLL/EXP1/FPGA2/FPGA2/FPGA2.srcs/constrs_1/imports/new/our_constraints.xdc:459]
+WARNING: [Vivado 12-4775] Pblock ranges need to include all sites of a tile. The following ranges will be automatically aligned to a tile boundary: SLICE_X42Y31:SLICE_X43Y31 [C:/Users/Darshana/Documents/GitHub/JitFilt/JitFilt-PLL/EXP1/FPGA2/FPGA2/FPGA2.srcs/constrs_1/imports/new/our_constraints.xdc:465]
+WARNING: [Vivado 12-4775] Pblock ranges need to include all sites of a tile. The following ranges will be automatically aligned to a tile boundary: SLICE_X42Y30:SLICE_X43Y30 [C:/Users/Darshana/Documents/GitHub/JitFilt/JitFilt-PLL/EXP1/FPGA2/FPGA2/FPGA2.srcs/constrs_1/imports/new/our_constraints.xdc:471]
+WARNING: [Vivado 12-4775] Pblock ranges need to include all sites of a tile. The following ranges will be automatically aligned to a tile boundary: SLICE_X42Y29:SLICE_X43Y29 [C:/Users/Darshana/Documents/GitHub/JitFilt/JitFilt-PLL/EXP1/FPGA2/FPGA2/FPGA2.srcs/constrs_1/imports/new/our_constraints.xdc:477]
+WARNING: [Vivado 12-4775] Pblock ranges need to include all sites of a tile. The following ranges will be automatically aligned to a tile boundary: SLICE_X42Y28:SLICE_X43Y28 [C:/Users/Darshana/Documents/GitHub/JitFilt/JitFilt-PLL/EXP1/FPGA2/FPGA2/FPGA2.srcs/constrs_1/imports/new/our_constraints.xdc:483]
+WARNING: [Vivado 12-4775] Pblock ranges need to include all sites of a tile. The following ranges will be automatically aligned to a tile boundary: SLICE_X42Y27:SLICE_X43Y27 [C:/Users/Darshana/Documents/GitHub/JitFilt/JitFilt-PLL/EXP1/FPGA2/FPGA2/FPGA2.srcs/constrs_1/imports/new/our_constraints.xdc:489]
+WARNING: [Vivado 12-4775] Pblock ranges need to include all sites of a tile. The following ranges will be automatically aligned to a tile boundary: SLICE_X42Y26:SLICE_X43Y26 [C:/Users/Darshana/Documents/GitHub/JitFilt/JitFilt-PLL/EXP1/FPGA2/FPGA2/FPGA2.srcs/constrs_1/imports/new/our_constraints.xdc:495]
+WARNING: [Vivado 12-4775] Pblock ranges need to include all sites of a tile. The following ranges will be automatically aligned to a tile boundary: SLICE_X42Y25:SLICE_X43Y25 [C:/Users/Darshana/Documents/GitHub/JitFilt/JitFilt-PLL/EXP1/FPGA2/FPGA2/FPGA2.srcs/constrs_1/imports/new/our_constraints.xdc:501]
+WARNING: [Vivado 12-4775] Pblock ranges need to include all sites of a tile. The following ranges will be automatically aligned to a tile boundary: SLICE_X42Y24:SLICE_X43Y24 [C:/Users/Darshana/Documents/GitHub/JitFilt/JitFilt-PLL/EXP1/FPGA2/FPGA2/FPGA2.srcs/constrs_1/imports/new/our_constraints.xdc:507]
+WARNING: [Vivado 12-4775] Pblock ranges need to include all sites of a tile. The following ranges will be automatically aligned to a tile boundary: SLICE_X42Y23:SLICE_X43Y23 [C:/Users/Darshana/Documents/GitHub/JitFilt/JitFilt-PLL/EXP1/FPGA2/FPGA2/FPGA2.srcs/constrs_1/imports/new/our_constraints.xdc:513]
+WARNING: [Vivado 12-4775] Pblock ranges need to include all sites of a tile. The following ranges will be automatically aligned to a tile boundary: SLICE_X42Y22:SLICE_X43Y22 [C:/Users/Darshana/Documents/GitHub/JitFilt/JitFilt-PLL/EXP1/FPGA2/FPGA2/FPGA2.srcs/constrs_1/imports/new/our_constraints.xdc:519]
+WARNING: [Vivado 12-4775] Pblock ranges need to include all sites of a tile. The following ranges will be automatically aligned to a tile boundary: SLICE_X42Y21:SLICE_X43Y21 [C:/Users/Darshana/Documents/GitHub/JitFilt/JitFilt-PLL/EXP1/FPGA2/FPGA2/FPGA2.srcs/constrs_1/imports/new/our_constraints.xdc:525]
+WARNING: [Vivado 12-4775] Pblock ranges need to include all sites of a tile. The following ranges will be automatically aligned to a tile boundary: SLICE_X42Y20:SLICE_X43Y20 [C:/Users/Darshana/Documents/GitHub/JitFilt/JitFilt-PLL/EXP1/FPGA2/FPGA2/FPGA2.srcs/constrs_1/imports/new/our_constraints.xdc:531]
+WARNING: [Vivado 12-4775] Pblock ranges need to include all sites of a tile. The following ranges will be automatically aligned to a tile boundary: SLICE_X42Y19:SLICE_X43Y19 [C:/Users/Darshana/Documents/GitHub/JitFilt/JitFilt-PLL/EXP1/FPGA2/FPGA2/FPGA2.srcs/constrs_1/imports/new/our_constraints.xdc:537]
+WARNING: [Vivado 12-4775] Pblock ranges need to include all sites of a tile. The following ranges will be automatically aligned to a tile boundary: SLICE_X42Y18:SLICE_X43Y18 [C:/Users/Darshana/Documents/GitHub/JitFilt/JitFilt-PLL/EXP1/FPGA2/FPGA2/FPGA2.srcs/constrs_1/imports/new/our_constraints.xdc:543]
+WARNING: [Vivado 12-4775] Pblock ranges need to include all sites of a tile. The following ranges will be automatically aligned to a tile boundary: SLICE_X42Y17:SLICE_X43Y17 [C:/Users/Darshana/Documents/GitHub/JitFilt/JitFilt-PLL/EXP1/FPGA2/FPGA2/FPGA2.srcs/constrs_1/imports/new/our_constraints.xdc:549]
+WARNING: [Vivado 12-4775] Pblock ranges need to include all sites of a tile. The following ranges will be automatically aligned to a tile boundary: SLICE_X42Y16:SLICE_X43Y16 [C:/Users/Darshana/Documents/GitHub/JitFilt/JitFilt-PLL/EXP1/FPGA2/FPGA2/FPGA2.srcs/constrs_1/imports/new/our_constraints.xdc:555]
+WARNING: [Vivado 12-4775] Pblock ranges need to include all sites of a tile. The following ranges will be automatically aligned to a tile boundary: SLICE_X42Y15:SLICE_X43Y15 [C:/Users/Darshana/Documents/GitHub/JitFilt/JitFilt-PLL/EXP1/FPGA2/FPGA2/FPGA2.srcs/constrs_1/imports/new/our_constraints.xdc:561]
+WARNING: [Vivado 12-4775] Pblock ranges need to include all sites of a tile. The following ranges will be automatically aligned to a tile boundary: SLICE_X42Y14:SLICE_X43Y14 [C:/Users/Darshana/Documents/GitHub/JitFilt/JitFilt-PLL/EXP1/FPGA2/FPGA2/FPGA2.srcs/constrs_1/imports/new/our_constraints.xdc:567]
+WARNING: [Vivado 12-4775] Pblock ranges need to include all sites of a tile. The following ranges will be automatically aligned to a tile boundary: SLICE_X42Y13:SLICE_X43Y13 [C:/Users/Darshana/Documents/GitHub/JitFilt/JitFilt-PLL/EXP1/FPGA2/FPGA2/FPGA2.srcs/constrs_1/imports/new/our_constraints.xdc:573]
+WARNING: [Vivado 12-4775] Pblock ranges need to include all sites of a tile. The following ranges will be automatically aligned to a tile boundary: SLICE_X42Y12:SLICE_X43Y12 [C:/Users/Darshana/Documents/GitHub/JitFilt/JitFilt-PLL/EXP1/FPGA2/FPGA2/FPGA2.srcs/constrs_1/imports/new/our_constraints.xdc:579]
+WARNING: [Vivado 12-4775] Pblock ranges need to include all sites of a tile. The following ranges will be automatically aligned to a tile boundary: SLICE_X42Y11:SLICE_X43Y11 [C:/Users/Darshana/Documents/GitHub/JitFilt/JitFilt-PLL/EXP1/FPGA2/FPGA2/FPGA2.srcs/constrs_1/imports/new/our_constraints.xdc:585]
+WARNING: [Vivado 12-4775] Pblock ranges need to include all sites of a tile. The following ranges will be automatically aligned to a tile boundary: SLICE_X42Y10:SLICE_X43Y10 [C:/Users/Darshana/Documents/GitHub/JitFilt/JitFilt-PLL/EXP1/FPGA2/FPGA2/FPGA2.srcs/constrs_1/imports/new/our_constraints.xdc:591]
+WARNING: [Vivado 12-4775] Pblock ranges need to include all sites of a tile. The following ranges will be automatically aligned to a tile boundary: SLICE_X42Y9:SLICE_X43Y9 [C:/Users/Darshana/Documents/GitHub/JitFilt/JitFilt-PLL/EXP1/FPGA2/FPGA2/FPGA2.srcs/constrs_1/imports/new/our_constraints.xdc:597]
+WARNING: [Vivado 12-4775] Pblock ranges need to include all sites of a tile. The following ranges will be automatically aligned to a tile boundary: SLICE_X42Y8:SLICE_X43Y8 [C:/Users/Darshana/Documents/GitHub/JitFilt/JitFilt-PLL/EXP1/FPGA2/FPGA2/FPGA2.srcs/constrs_1/imports/new/our_constraints.xdc:603]
+WARNING: [Vivado 12-4775] Pblock ranges need to include all sites of a tile. The following ranges will be automatically aligned to a tile boundary: SLICE_X42Y7:SLICE_X43Y7 [C:/Users/Darshana/Documents/GitHub/JitFilt/JitFilt-PLL/EXP1/FPGA2/FPGA2/FPGA2.srcs/constrs_1/imports/new/our_constraints.xdc:609]
+WARNING: [Vivado 12-4775] Pblock ranges need to include all sites of a tile. The following ranges will be automatically aligned to a tile boundary: SLICE_X42Y6:SLICE_X43Y6 [C:/Users/Darshana/Documents/GitHub/JitFilt/JitFilt-PLL/EXP1/FPGA2/FPGA2/FPGA2.srcs/constrs_1/imports/new/our_constraints.xdc:615]
+WARNING: [Vivado 12-4775] Pblock ranges need to include all sites of a tile. The following ranges will be automatically aligned to a tile boundary: SLICE_X42Y5:SLICE_X43Y5 [C:/Users/Darshana/Documents/GitHub/JitFilt/JitFilt-PLL/EXP1/FPGA2/FPGA2/FPGA2.srcs/constrs_1/imports/new/our_constraints.xdc:621]
+WARNING: [Vivado 12-4775] Pblock ranges need to include all sites of a tile. The following ranges will be automatically aligned to a tile boundary: SLICE_X42Y4:SLICE_X43Y4 [C:/Users/Darshana/Documents/GitHub/JitFilt/JitFilt-PLL/EXP1/FPGA2/FPGA2/FPGA2.srcs/constrs_1/imports/new/our_constraints.xdc:628]
+WARNING: [Vivado 12-4775] Pblock ranges need to include all sites of a tile. The following ranges will be automatically aligned to a tile boundary: SLICE_X42Y3:SLICE_X43Y3 [C:/Users/Darshana/Documents/GitHub/JitFilt/JitFilt-PLL/EXP1/FPGA2/FPGA2/FPGA2.srcs/constrs_1/imports/new/our_constraints.xdc:633]
+WARNING: [Vivado 12-4775] Pblock ranges need to include all sites of a tile. The following ranges will be automatically aligned to a tile boundary: SLICE_X42Y2:SLICE_X43Y2 [C:/Users/Darshana/Documents/GitHub/JitFilt/JitFilt-PLL/EXP1/FPGA2/FPGA2/FPGA2.srcs/constrs_1/imports/new/our_constraints.xdc:638]
+WARNING: [Vivado 12-4775] Pblock ranges need to include all sites of a tile. The following ranges will be automatically aligned to a tile boundary: SLICE_X42Y1:SLICE_X43Y1 [C:/Users/Darshana/Documents/GitHub/JitFilt/JitFilt-PLL/EXP1/FPGA2/FPGA2/FPGA2.srcs/constrs_1/imports/new/our_constraints.xdc:643]
+WARNING: [Vivado 12-4775] Pblock ranges need to include all sites of a tile. The following ranges will be automatically aligned to a tile boundary: SLICE_X33Y44:SLICE_X33Y44 [C:/Users/Darshana/Documents/GitHub/JitFilt/JitFilt-PLL/EXP1/FPGA2/FPGA2/FPGA2.srcs/constrs_1/imports/new/our_constraints.xdc:919]
+WARNING: [Vivado 12-4775] Pblock ranges need to include all sites of a tile. The following ranges will be automatically aligned to a tile boundary: SLICE_X33Y43:SLICE_X33Y43 [C:/Users/Darshana/Documents/GitHub/JitFilt/JitFilt-PLL/EXP1/FPGA2/FPGA2/FPGA2.srcs/constrs_1/imports/new/our_constraints.xdc:925]
+WARNING: [Vivado 12-4775] Pblock ranges need to include all sites of a tile. The following ranges will be automatically aligned to a tile boundary: SLICE_X33Y42:SLICE_X33Y42 [C:/Users/Darshana/Documents/GitHub/JitFilt/JitFilt-PLL/EXP1/FPGA2/FPGA2/FPGA2.srcs/constrs_1/imports/new/our_constraints.xdc:931]
+WARNING: [Vivado 12-4775] Pblock ranges need to include all sites of a tile. The following ranges will be automatically aligned to a tile boundary: SLICE_X33Y41:SLICE_X33Y41 [C:/Users/Darshana/Documents/GitHub/JitFilt/JitFilt-PLL/EXP1/FPGA2/FPGA2/FPGA2.srcs/constrs_1/imports/new/our_constraints.xdc:937]
+WARNING: [Vivado 12-4775] Pblock ranges need to include all sites of a tile. The following ranges will be automatically aligned to a tile boundary: SLICE_X33Y40:SLICE_X33Y40 [C:/Users/Darshana/Documents/GitHub/JitFilt/JitFilt-PLL/EXP1/FPGA2/FPGA2/FPGA2.srcs/constrs_1/imports/new/our_constraints.xdc:943]
+WARNING: [Vivado 12-4775] Pblock ranges need to include all sites of a tile. The following ranges will be automatically aligned to a tile boundary: SLICE_X33Y39:SLICE_X33Y39 [C:/Users/Darshana/Documents/GitHub/JitFilt/JitFilt-PLL/EXP1/FPGA2/FPGA2/FPGA2.srcs/constrs_1/imports/new/our_constraints.xdc:949]
+WARNING: [Vivado 12-4775] Pblock ranges need to include all sites of a tile. The following ranges will be automatically aligned to a tile boundary: SLICE_X33Y38:SLICE_X33Y38 [C:/Users/Darshana/Documents/GitHub/JitFilt/JitFilt-PLL/EXP1/FPGA2/FPGA2/FPGA2.srcs/constrs_1/imports/new/our_constraints.xdc:955]
+WARNING: [Vivado 12-4775] Pblock ranges need to include all sites of a tile. The following ranges will be automatically aligned to a tile boundary: SLICE_X33Y37:SLICE_X33Y37 [C:/Users/Darshana/Documents/GitHub/JitFilt/JitFilt-PLL/EXP1/FPGA2/FPGA2/FPGA2.srcs/constrs_1/imports/new/our_constraints.xdc:961]
+WARNING: [Vivado 12-4775] Pblock ranges need to include all sites of a tile. The following ranges will be automatically aligned to a tile boundary: SLICE_X33Y36:SLICE_X33Y36 [C:/Users/Darshana/Documents/GitHub/JitFilt/JitFilt-PLL/EXP1/FPGA2/FPGA2/FPGA2.srcs/constrs_1/imports/new/our_constraints.xdc:967]
+WARNING: [Vivado 12-4775] Pblock ranges need to include all sites of a tile. The following ranges will be automatically aligned to a tile boundary: SLICE_X33Y35:SLICE_X33Y35 [C:/Users/Darshana/Documents/GitHub/JitFilt/JitFilt-PLL/EXP1/FPGA2/FPGA2/FPGA2.srcs/constrs_1/imports/new/our_constraints.xdc:973]
+WARNING: [Vivado 12-4775] Pblock ranges need to include all sites of a tile. The following ranges will be automatically aligned to a tile boundary: SLICE_X33Y34:SLICE_X33Y34 [C:/Users/Darshana/Documents/GitHub/JitFilt/JitFilt-PLL/EXP1/FPGA2/FPGA2/FPGA2.srcs/constrs_1/imports/new/our_constraints.xdc:979]
+WARNING: [Vivado 12-4775] Pblock ranges need to include all sites of a tile. The following ranges will be automatically aligned to a tile boundary: SLICE_X33Y33:SLICE_X33Y33 [C:/Users/Darshana/Documents/GitHub/JitFilt/JitFilt-PLL/EXP1/FPGA2/FPGA2/FPGA2.srcs/constrs_1/imports/new/our_constraints.xdc:985]
+WARNING: [Vivado 12-4775] Pblock ranges need to include all sites of a tile. The following ranges will be automatically aligned to a tile boundary: SLICE_X33Y32:SLICE_X33Y32 [C:/Users/Darshana/Documents/GitHub/JitFilt/JitFilt-PLL/EXP1/FPGA2/FPGA2/FPGA2.srcs/constrs_1/imports/new/our_constraints.xdc:992]
+WARNING: [Vivado 12-4775] Pblock ranges need to include all sites of a tile. The following ranges will be automatically aligned to a tile boundary: SLICE_X33Y31:SLICE_X33Y31 [C:/Users/Darshana/Documents/GitHub/JitFilt/JitFilt-PLL/EXP1/FPGA2/FPGA2/FPGA2.srcs/constrs_1/imports/new/our_constraints.xdc:998]
+WARNING: [Vivado 12-4775] Pblock ranges need to include all sites of a tile. The following ranges will be automatically aligned to a tile boundary: SLICE_X33Y30:SLICE_X33Y30 [C:/Users/Darshana/Documents/GitHub/JitFilt/JitFilt-PLL/EXP1/FPGA2/FPGA2/FPGA2.srcs/constrs_1/imports/new/our_constraints.xdc:1004]
+WARNING: [Vivado 12-4775] Pblock ranges need to include all sites of a tile. The following ranges will be automatically aligned to a tile boundary: SLICE_X33Y29:SLICE_X33Y29 [C:/Users/Darshana/Documents/GitHub/JitFilt/JitFilt-PLL/EXP1/FPGA2/FPGA2/FPGA2.srcs/constrs_1/imports/new/our_constraints.xdc:1010]
+WARNING: [Vivado 12-4775] Pblock ranges need to include all sites of a tile. The following ranges will be automatically aligned to a tile boundary: SLICE_X33Y28:SLICE_X33Y28 [C:/Users/Darshana/Documents/GitHub/JitFilt/JitFilt-PLL/EXP1/FPGA2/FPGA2/FPGA2.srcs/constrs_1/imports/new/our_constraints.xdc:1016]
+WARNING: [Vivado 12-4775] Pblock ranges need to include all sites of a tile. The following ranges will be automatically aligned to a tile boundary: SLICE_X33Y27:SLICE_X33Y27 [C:/Users/Darshana/Documents/GitHub/JitFilt/JitFilt-PLL/EXP1/FPGA2/FPGA2/FPGA2.srcs/constrs_1/imports/new/our_constraints.xdc:1022]
+WARNING: [Vivado 12-4775] Pblock ranges need to include all sites of a tile. The following ranges will be automatically aligned to a tile boundary: SLICE_X33Y26:SLICE_X33Y26 [C:/Users/Darshana/Documents/GitHub/JitFilt/JitFilt-PLL/EXP1/FPGA2/FPGA2/FPGA2.srcs/constrs_1/imports/new/our_constraints.xdc:1028]
+WARNING: [Vivado 12-4775] Pblock ranges need to include all sites of a tile. The following ranges will be automatically aligned to a tile boundary: SLICE_X33Y25:SLICE_X33Y25 [C:/Users/Darshana/Documents/GitHub/JitFilt/JitFilt-PLL/EXP1/FPGA2/FPGA2/FPGA2.srcs/constrs_1/imports/new/our_constraints.xdc:1034]
+WARNING: [Vivado 12-4775] Pblock ranges need to include all sites of a tile. The following ranges will be automatically aligned to a tile boundary: SLICE_X33Y24:SLICE_X33Y24 [C:/Users/Darshana/Documents/GitHub/JitFilt/JitFilt-PLL/EXP1/FPGA2/FPGA2/FPGA2.srcs/constrs_1/imports/new/our_constraints.xdc:1040]
+WARNING: [Vivado 12-4775] Pblock ranges need to include all sites of a tile. The following ranges will be automatically aligned to a tile boundary: SLICE_X33Y23:SLICE_X33Y23 [C:/Users/Darshana/Documents/GitHub/JitFilt/JitFilt-PLL/EXP1/FPGA2/FPGA2/FPGA2.srcs/constrs_1/imports/new/our_constraints.xdc:1046]
+WARNING: [Vivado 12-4775] Pblock ranges need to include all sites of a tile. The following ranges will be automatically aligned to a tile boundary: SLICE_X33Y22:SLICE_X33Y22 [C:/Users/Darshana/Documents/GitHub/JitFilt/JitFilt-PLL/EXP1/FPGA2/FPGA2/FPGA2.srcs/constrs_1/imports/new/our_constraints.xdc:1052]
+WARNING: [Vivado 12-4775] Pblock ranges need to include all sites of a tile. The following ranges will be automatically aligned to a tile boundary: SLICE_X33Y21:SLICE_X33Y21 [C:/Users/Darshana/Documents/GitHub/JitFilt/JitFilt-PLL/EXP1/FPGA2/FPGA2/FPGA2.srcs/constrs_1/imports/new/our_constraints.xdc:1058]
+WARNING: [Vivado 12-4775] Pblock ranges need to include all sites of a tile. The following ranges will be automatically aligned to a tile boundary: SLICE_X33Y20:SLICE_X33Y20 [C:/Users/Darshana/Documents/GitHub/JitFilt/JitFilt-PLL/EXP1/FPGA2/FPGA2/FPGA2.srcs/constrs_1/imports/new/our_constraints.xdc:1064]
+WARNING: [Vivado 12-4775] Pblock ranges need to include all sites of a tile. The following ranges will be automatically aligned to a tile boundary: SLICE_X33Y19:SLICE_X33Y19 [C:/Users/Darshana/Documents/GitHub/JitFilt/JitFilt-PLL/EXP1/FPGA2/FPGA2/FPGA2.srcs/constrs_1/imports/new/our_constraints.xdc:1070]
+WARNING: [Vivado 12-4775] Pblock ranges need to include all sites of a tile. The following ranges will be automatically aligned to a tile boundary: SLICE_X33Y18:SLICE_X33Y18 [C:/Users/Darshana/Documents/GitHub/JitFilt/JitFilt-PLL/EXP1/FPGA2/FPGA2/FPGA2.srcs/constrs_1/imports/new/our_constraints.xdc:1076]
+WARNING: [Vivado 12-4775] Pblock ranges need to include all sites of a tile. The following ranges will be automatically aligned to a tile boundary: SLICE_X33Y17:SLICE_X33Y17 [C:/Users/Darshana/Documents/GitHub/JitFilt/JitFilt-PLL/EXP1/FPGA2/FPGA2/FPGA2.srcs/constrs_1/imports/new/our_constraints.xdc:1082]
+WARNING: [Vivado 12-4775] Pblock ranges need to include all sites of a tile. The following ranges will be automatically aligned to a tile boundary: SLICE_X33Y16:SLICE_X33Y16 [C:/Users/Darshana/Documents/GitHub/JitFilt/JitFilt-PLL/EXP1/FPGA2/FPGA2/FPGA2.srcs/constrs_1/imports/new/our_constraints.xdc:1088]
+WARNING: [Vivado 12-4775] Pblock ranges need to include all sites of a tile. The following ranges will be automatically aligned to a tile boundary: SLICE_X33Y15:SLICE_X33Y15 [C:/Users/Darshana/Documents/GitHub/JitFilt/JitFilt-PLL/EXP1/FPGA2/FPGA2/FPGA2.srcs/constrs_1/imports/new/our_constraints.xdc:1094]
+WARNING: [Vivado 12-4775] Pblock ranges need to include all sites of a tile. The following ranges will be automatically aligned to a tile boundary: SLICE_X33Y14:SLICE_X33Y14 [C:/Users/Darshana/Documents/GitHub/JitFilt/JitFilt-PLL/EXP1/FPGA2/FPGA2/FPGA2.srcs/constrs_1/imports/new/our_constraints.xdc:1100]
+WARNING: [Vivado 12-4775] Pblock ranges need to include all sites of a tile. The following ranges will be automatically aligned to a tile boundary: SLICE_X33Y13:SLICE_X33Y13 [C:/Users/Darshana/Documents/GitHub/JitFilt/JitFilt-PLL/EXP1/FPGA2/FPGA2/FPGA2.srcs/constrs_1/imports/new/our_constraints.xdc:1106]
+WARNING: [Vivado 12-4775] Pblock ranges need to include all sites of a tile. The following ranges will be automatically aligned to a tile boundary: SLICE_X33Y12:SLICE_X33Y12 [C:/Users/Darshana/Documents/GitHub/JitFilt/JitFilt-PLL/EXP1/FPGA2/FPGA2/FPGA2.srcs/constrs_1/imports/new/our_constraints.xdc:1112]
+WARNING: [Vivado 12-4775] Pblock ranges need to include all sites of a tile. The following ranges will be automatically aligned to a tile boundary: SLICE_X33Y11:SLICE_X33Y11 [C:/Users/Darshana/Documents/GitHub/JitFilt/JitFilt-PLL/EXP1/FPGA2/FPGA2/FPGA2.srcs/constrs_1/imports/new/our_constraints.xdc:1118]
+WARNING: [Vivado 12-4775] Pblock ranges need to include all sites of a tile. The following ranges will be automatically aligned to a tile boundary: SLICE_X33Y10:SLICE_X33Y10 [C:/Users/Darshana/Documents/GitHub/JitFilt/JitFilt-PLL/EXP1/FPGA2/FPGA2/FPGA2.srcs/constrs_1/imports/new/our_constraints.xdc:1124]
+WARNING: [Vivado 12-4775] Pblock ranges need to include all sites of a tile. The following ranges will be automatically aligned to a tile boundary: SLICE_X33Y9:SLICE_X33Y9 [C:/Users/Darshana/Documents/GitHub/JitFilt/JitFilt-PLL/EXP1/FPGA2/FPGA2/FPGA2.srcs/constrs_1/imports/new/our_constraints.xdc:1130]
+WARNING: [Vivado 12-4775] Pblock ranges need to include all sites of a tile. The following ranges will be automatically aligned to a tile boundary: SLICE_X33Y8:SLICE_X33Y8 [C:/Users/Darshana/Documents/GitHub/JitFilt/JitFilt-PLL/EXP1/FPGA2/FPGA2/FPGA2.srcs/constrs_1/imports/new/our_constraints.xdc:1136]
+WARNING: [Vivado 12-4775] Pblock ranges need to include all sites of a tile. The following ranges will be automatically aligned to a tile boundary: SLICE_X33Y7:SLICE_X33Y7 [C:/Users/Darshana/Documents/GitHub/JitFilt/JitFilt-PLL/EXP1/FPGA2/FPGA2/FPGA2.srcs/constrs_1/imports/new/our_constraints.xdc:1143]
+WARNING: [Vivado 12-4775] Pblock ranges need to include all sites of a tile. The following ranges will be automatically aligned to a tile boundary: SLICE_X33Y6:SLICE_X33Y6 [C:/Users/Darshana/Documents/GitHub/JitFilt/JitFilt-PLL/EXP1/FPGA2/FPGA2/FPGA2.srcs/constrs_1/imports/new/our_constraints.xdc:1150]
+WARNING: [Vivado 12-4775] Pblock ranges need to include all sites of a tile. The following ranges will be automatically aligned to a tile boundary: SLICE_X33Y5:SLICE_X33Y5 [C:/Users/Darshana/Documents/GitHub/JitFilt/JitFilt-PLL/EXP1/FPGA2/FPGA2/FPGA2.srcs/constrs_1/imports/new/our_constraints.xdc:1157]
+WARNING: [Vivado 12-4775] Pblock ranges need to include all sites of a tile. The following ranges will be automatically aligned to a tile boundary: SLICE_X33Y4:SLICE_X33Y4 [C:/Users/Darshana/Documents/GitHub/JitFilt/JitFilt-PLL/EXP1/FPGA2/FPGA2/FPGA2.srcs/constrs_1/imports/new/our_constraints.xdc:1164]
+WARNING: [Vivado 12-4775] Pblock ranges need to include all sites of a tile. The following ranges will be automatically aligned to a tile boundary: SLICE_X33Y3:SLICE_X33Y3 [C:/Users/Darshana/Documents/GitHub/JitFilt/JitFilt-PLL/EXP1/FPGA2/FPGA2/FPGA2.srcs/constrs_1/imports/new/our_constraints.xdc:1169]
+WARNING: [Vivado 12-4775] Pblock ranges need to include all sites of a tile. The following ranges will be automatically aligned to a tile boundary: SLICE_X33Y2:SLICE_X33Y2 [C:/Users/Darshana/Documents/GitHub/JitFilt/JitFilt-PLL/EXP1/FPGA2/FPGA2/FPGA2.srcs/constrs_1/imports/new/our_constraints.xdc:1174]
+WARNING: [Vivado 12-4775] Pblock ranges need to include all sites of a tile. The following ranges will be automatically aligned to a tile boundary: SLICE_X33Y1:SLICE_X33Y1 [C:/Users/Darshana/Documents/GitHub/JitFilt/JitFilt-PLL/EXP1/FPGA2/FPGA2/FPGA2.srcs/constrs_1/imports/new/our_constraints.xdc:1179]
+Finished Parsing XDC File [C:/Users/Darshana/Documents/GitHub/JitFilt/JitFilt-PLL/EXP1/FPGA2/FPGA2/FPGA2.srcs/constrs_1/imports/new/our_constraints.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/Darshana/Documents/GitHub/JitFilt/JitFilt-PLL/EXP1/FPGA2/FPGA2/FPGA2.srcs/constrs_1/imports/new/our_constraints.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/top_TDC_ZED_BOARD_propImpl.xdc].
 Resolution: To avoid this warning, move constraints listed in [.Xil/top_TDC_ZED_BOARD_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
 INFO: [Timing 38-2] Deriving generated clocks
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1635.660 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1641.043 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 1 instances were transformed.
   PLLE2_BASE => PLLE2_ADV: 1 instance 
 
 The system cannot find the path specified.
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.016 . Memory (MB): peak = 1635.660 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.015 . Memory (MB): peak = 1641.043 ; gain = 0.000
 INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
 INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 1635.660 ; gain = 660.902
+Finished Constraint Validation : Time (s): cpu = 00:00:20 ; elapsed = 00:00:20 . Memory (MB): peak = 1641.043 ; gain = 666.211
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7z020clg484-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 1635.660 ; gain = 660.902
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:20 ; elapsed = 00:00:20 . Memory (MB): peak = 1641.043 ; gain = 666.211
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:21 ; elapsed = 00:00:21 . Memory (MB): peak = 1635.660 ; gain = 660.902
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:20 ; elapsed = 00:00:20 . Memory (MB): peak = 1641.043 ; gain = 666.211
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-802] inferred FSM for state register 'r_SM_Main_reg' in module 'uart_tx'
 ---------------------------------------------------------------------------------------------------
@@ -250,7 +250,7 @@ INFO: [Synth 8-802] inferred FSM for state register 'r_SM_Main_reg' in module 'u
 ---------------------------------------------------------------------------------------------------
 INFO: [Synth 8-3354] encoded FSM with state register 'r_SM_Main_reg' using encoding 'sequential' in module 'uart_tx'
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:22 ; elapsed = 00:00:22 . Memory (MB): peak = 1635.660 ; gain = 660.902
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:21 ; elapsed = 00:00:21 . Memory (MB): peak = 1641.043 ; gain = 666.211
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
@@ -338,7 +338,7 @@ Start Cross Boundary and Area Optimization
 WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
 WARNING: [Synth 8-7129] Port rx in module top_TDC_ZED_BOARD is either unconnected or has no load
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:59 ; elapsed = 00:01:00 . Memory (MB): peak = 2573.844 ; gain = 1599.086
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:58 ; elapsed = 00:00:59 . Memory (MB): peak = 2579.109 ; gain = 1604.277
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP, Shift Register and Retiming Reporting
@@ -360,13 +360,13 @@ Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:05 ; elapsed = 00:01:06 . Memory (MB): peak = 2573.844 ; gain = 1599.086
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:05 ; elapsed = 00:01:06 . Memory (MB): peak = 2579.109 ; gain = 1604.277
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:01:40 ; elapsed = 00:01:42 . Memory (MB): peak = 2765.480 ; gain = 1790.723
+Finished Timing Optimization : Time (s): cpu = 00:01:40 ; elapsed = 00:01:41 . Memory (MB): peak = 2763.047 ; gain = 1788.215
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP, Shift Register and Retiming Reporting
@@ -387,7 +387,7 @@ Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:01:43 ; elapsed = 00:01:44 . Memory (MB): peak = 2765.480 ; gain = 1790.723
+Finished Technology Mapping : Time (s): cpu = 00:01:42 ; elapsed = 00:01:43 . Memory (MB): peak = 2763.047 ; gain = 1788.215
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -405,37 +405,37 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:01:48 ; elapsed = 00:01:50 . Memory (MB): peak = 2765.480 ; gain = 1790.723
+Finished IO Insertion : Time (s): cpu = 00:01:48 ; elapsed = 00:01:49 . Memory (MB): peak = 2763.047 ; gain = 1788.215
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:01:48 ; elapsed = 00:01:50 . Memory (MB): peak = 2765.480 ; gain = 1790.723
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:48 ; elapsed = 00:01:49 . Memory (MB): peak = 2763.047 ; gain = 1788.215
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:49 ; elapsed = 00:01:51 . Memory (MB): peak = 2765.480 ; gain = 1790.723
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:48 ; elapsed = 00:01:50 . Memory (MB): peak = 2763.047 ; gain = 1788.215
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:01:49 ; elapsed = 00:01:51 . Memory (MB): peak = 2765.480 ; gain = 1790.723
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:48 ; elapsed = 00:01:50 . Memory (MB): peak = 2763.047 ; gain = 1788.215
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:01:49 ; elapsed = 00:01:51 . Memory (MB): peak = 2765.480 ; gain = 1790.723
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:49 ; elapsed = 00:01:50 . Memory (MB): peak = 2763.047 ; gain = 1788.215
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:01:49 ; elapsed = 00:01:51 . Memory (MB): peak = 2765.480 ; gain = 1790.723
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:49 ; elapsed = 00:01:50 . Memory (MB): peak = 2763.047 ; gain = 1788.215
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -470,18 +470,18 @@ Report Cell Usage:
 |17    |OBUF       |     8|
 +------+-----------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:01:49 ; elapsed = 00:01:51 . Memory (MB): peak = 2765.480 ; gain = 1790.723
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:49 ; elapsed = 00:01:50 . Memory (MB): peak = 2763.047 ; gain = 1788.215
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 2 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:01:36 ; elapsed = 00:01:47 . Memory (MB): peak = 2765.480 ; gain = 1692.348
-Synthesis Optimization Complete : Time (s): cpu = 00:01:49 ; elapsed = 00:01:51 . Memory (MB): peak = 2765.480 ; gain = 1790.723
+Synthesis Optimization Runtime : Time (s): cpu = 00:01:36 ; elapsed = 00:01:46 . Memory (MB): peak = 2763.047 ; gain = 1685.562
+Synthesis Optimization Complete : Time (s): cpu = 00:01:49 ; elapsed = 00:01:50 . Memory (MB): peak = 2763.047 ; gain = 1788.215
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.048 . Memory (MB): peak = 2765.480 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.049 . Memory (MB): peak = 2763.047 ; gain = 0.000
 INFO: [Netlist 29-17] Analyzing 173 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 2765.480 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 2763.047 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 61 instances were transformed.
   PLLE2_BASE => PLLE2_ADV: 1 instance 
@@ -492,9 +492,9 @@ Synth Design complete | Checksum: 3f8319d6
 INFO: [Common 17-83] Releasing license: Synthesis
 50 Infos, 106 Warnings, 1 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:01:56 ; elapsed = 00:02:06 . Memory (MB): peak = 2765.480 ; gain = 2211.168
+synth_design: Time (s): cpu = 00:01:55 ; elapsed = 00:02:42 . Memory (MB): peak = 2763.047 ; gain = 2209.344
 INFO: [runtcl-6] Synthesis results are not added to the cache due to CRITICAL_WARNING
-Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 2765.480 ; gain = 0.000
-INFO: [Common 17-1381] The checkpoint 'C:/Users/Darshana/Documents/GitHub/JitFilt/ESP1/FPGA2/FPGA2/FPGA2.runs/synth_1/top_TDC_ZED_BOARD.dcp' has been generated.
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 2763.047 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/Darshana/Documents/GitHub/JitFilt/JitFilt-PLL/EXP1/FPGA2/FPGA2/FPGA2.runs/synth_1/top_TDC_ZED_BOARD.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file top_TDC_ZED_BOARD_utilization_synth.rpt -pb top_TDC_ZED_BOARD_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Sat Oct 12 17:57:42 2024...
+INFO: [Common 17-206] Exiting Vivado at Mon Oct 14 04:56:55 2024...

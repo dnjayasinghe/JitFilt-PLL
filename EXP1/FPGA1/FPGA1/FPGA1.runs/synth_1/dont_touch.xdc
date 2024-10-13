@@ -6,4 +6,4 @@
 # Block Designs: bd/design_1/design_1.bd
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==design_1 || ORIG_REF_NAME==design_1} -quiet] -quiet
 
-# XDC: C:/Users/Darshana/Documents/GitHub/JitFilt/ESP1/FPGA1/FPGA1/FPGA1.gen/sources_1/bd/design_1/design_1_ooc.xdc
+# XDC: c:/Users/Darshana/Documents/GitHub/JitFilt/JitFilt-PLL/EXP1/FPGA1/FPGA1/FPGA1.gen/sources_1/bd/design_1/design_1_ooc.xdc

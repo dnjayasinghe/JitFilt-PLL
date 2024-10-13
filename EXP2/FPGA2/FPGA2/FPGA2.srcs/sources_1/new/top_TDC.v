@@ -1,5 +1,4 @@
-// Matthew Francis
-// SIMON CPA
+
 
 `timescale 1ns / 1ps
 

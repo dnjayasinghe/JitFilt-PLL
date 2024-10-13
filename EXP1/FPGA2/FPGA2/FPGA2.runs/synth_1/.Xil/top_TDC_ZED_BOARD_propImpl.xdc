@@ -1,4 +1,4 @@
-set_property SRC_FILE_INFO {cfile:C:/Users/Darshana/Documents/GitHub/JitFilt/ESP1/FPGA2/FPGA2/FPGA2.srcs/constrs_1/imports/new/our_constraints.xdc rfile:../../../FPGA2.srcs/constrs_1/imports/new/our_constraints.xdc id:1} [current_design]
+set_property SRC_FILE_INFO {cfile:C:/Users/Darshana/Documents/GitHub/JitFilt/JitFilt-PLL/EXP1/FPGA2/FPGA2/FPGA2.srcs/constrs_1/imports/new/our_constraints.xdc rfile:../../../FPGA2.srcs/constrs_1/imports/new/our_constraints.xdc id:1} [current_design]
 set_property src_info {type:XDC file:1 line:65 export:INPUT save:INPUT read:READ} [current_design]
 set_property CLOCK_DEDICATED_ROUTE FALSE [get_nets clk_IBUF]
 set_property src_info {type:XDC file:1 line:102 export:INPUT save:INPUT read:READ} [current_design]
