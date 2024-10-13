@@ -1,0 +1,613 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2023.2 (win64) Build 4029153 Fri Oct 13 20:14:34 MDT 2023
+| Date         : Fri Oct 11 12:50:50 2024
+| Host         : DESKTOP-O3QOG7I running 64-bit major release  (build 9200)
+| Command      : report_timing_summary -max_paths 10 -report_unconstrained -file top_timing_summary_routed.rpt -pb top_timing_summary_routed.pb -rpx top_timing_summary_routed.rpx -warn_on_violation
+| Design       : top
+| Device       : 7z020-clg484
+| Speed File   : -1  PRODUCTION 1.12 2019-11-22
+| Design State : Routed
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Timing Summary Report
+
+------------------------------------------------------------------------------------------------
+| Timer Settings
+| --------------
+------------------------------------------------------------------------------------------------
+
+  Enable Multi Corner Analysis               :  Yes
+  Enable Pessimism Removal                   :  Yes
+  Pessimism Removal Resolution               :  Nearest Common Node
+  Enable Input Delay Default Clock           :  No
+  Enable Preset / Clear Arcs                 :  No
+  Disable Flight Delays                      :  No
+  Ignore I/O Paths                           :  No
+  Timing Early Launch at Borrowing Latches   :  No
+  Borrow Time for Max Delay Exceptions       :  Yes
+  Merge Timing Exceptions                    :  Yes
+  Inter-SLR Compensation                     :  Conservative
+
+  Corner  Analyze    Analyze    
+  Name    Max Paths  Min Paths  
+  ------  ---------  ---------  
+  Slow    Yes        Yes        
+  Fast    Yes        Yes        
+
+
+------------------------------------------------------------------------------------------------
+| Report Methodology
+| ------------------
+------------------------------------------------------------------------------------------------
+
+Rule       Severity          Description                  Violations  
+---------  ----------------  ---------------------------  ----------  
+TIMING-17  Critical Warning  Non-clocked sequential cell  1000        
+SYNTH-16   Warning           Address collision            1           
+
+Note: This report is based on the most recent report_methodology run and may not be up-to-date. Run report_methodology on the current design for the latest report.
+
+
+
+check_timing report
+
+Table of Contents
+-----------------
+1. checking no_clock (3183)
+2. checking constant_clock (0)
+3. checking pulse_width_clock (0)
+4. checking unconstrained_internal_endpoints (8484)
+5. checking no_input_delay (2)
+6. checking no_output_delay (9)
+7. checking multiple_clock (0)
+8. checking generated_clocks (0)
+9. checking loops (0)
+10. checking partial_input_delay (0)
+11. checking partial_output_delay (0)
+12. checking latch_loops (0)
+
+1. checking no_clock (3183)
+---------------------------
+ There are 3183 register/latch pins with no clock driven by root clock pin: clk (HIGH)
+
+
+2. checking constant_clock (0)
+------------------------------
+ There are 0 register/latch pins with constant_clock.
+
+
+3. checking pulse_width_clock (0)
+---------------------------------
+ There are 0 register/latch pins which need pulse_width check
+
+
+4. checking unconstrained_internal_endpoints (8484)
+---------------------------------------------------
+ There are 8484 pins that are not constrained for maximum delay. (HIGH)
+
+ There are 0 pins that are not constrained for maximum delay due to constant clock.
+
+
+5. checking no_input_delay (2)
+------------------------------
+ There are 2 input ports with no input delay specified. (HIGH)
+
+ There are 0 input ports with no input delay but user has a false path constraint.
+
+
+6. checking no_output_delay (9)
+-------------------------------
+ There are 9 ports with no output delay specified. (HIGH)
+
+ There are 0 ports with no output delay but user has a false path constraint
+
+ There are 0 ports with no output delay but with a timing clock defined on it or propagating through it
+
+
+7. checking multiple_clock (0)
+------------------------------
+ There are 0 register/latch pins with multiple clocks.
+
+
+8. checking generated_clocks (0)
+--------------------------------
+ There are 0 generated clocks that are not connected to a clock source.
+
+
+9. checking loops (0)
+---------------------
+ There are 0 combinational loops in the design.
+
+
+10. checking partial_input_delay (0)
+------------------------------------
+ There are 0 input ports with partial input delay specified.
+
+
+11. checking partial_output_delay (0)
+-------------------------------------
+ There are 0 ports with partial output delay specified.
+
+
+12. checking latch_loops (0)
+----------------------------
+ There are 0 combinational latch loops in the design through latch input
+
+
+
+------------------------------------------------------------------------------------------------
+| Design Timing Summary
+| ---------------------
+------------------------------------------------------------------------------------------------
+
+    WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints     WPWS(ns)     TPWS(ns)  TPWS Failing Endpoints  TPWS Total Endpoints  
+    -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------     --------     --------  ----------------------  --------------------  
+        inf        0.000                      0                 8495          inf        0.000                      0                 8495           NA           NA                      NA                    NA  
+
+
+There are no user specified timing constraints.
+
+
+------------------------------------------------------------------------------------------------
+| Clock Summary
+| -------------
+------------------------------------------------------------------------------------------------
+
+
+------------------------------------------------------------------------------------------------
+| Intra Clock Table
+| -----------------
+------------------------------------------------------------------------------------------------
+
+Clock             WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints     WPWS(ns)     TPWS(ns)  TPWS Failing Endpoints  TPWS Total Endpoints  
+-----             -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------     --------     --------  ----------------------  --------------------  
+
+
+------------------------------------------------------------------------------------------------
+| Inter Clock Table
+| -----------------
+------------------------------------------------------------------------------------------------
+
+From Clock    To Clock          WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints  
+----------    --------          -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------  
+
+
+------------------------------------------------------------------------------------------------
+| Other Path Groups Table
+| -----------------------
+------------------------------------------------------------------------------------------------
+
+Path Group    From Clock    To Clock          WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints  
+----------    ----------    --------          -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------  
+
+
+------------------------------------------------------------------------------------------------
+| User Ignored Path Table
+| -----------------------
+------------------------------------------------------------------------------------------------
+
+Path Group    From Clock    To Clock    
+----------    ----------    --------    
+
+
+------------------------------------------------------------------------------------------------
+| Unconstrained Path Table
+| ------------------------
+------------------------------------------------------------------------------------------------
+
+Path Group    From Clock    To Clock    
+----------    ----------    --------    
+(none)                                    
+
+
+------------------------------------------------------------------------------------------------
+| Timing Details
+| --------------
+------------------------------------------------------------------------------------------------
+
+
+--------------------------------------------------------------------------------------
+Path Group:  (none)
+From Clock:  
+  To Clock:  
+
+Max Delay          8495 Endpoints
+Min Delay          8495 Endpoints
+--------------------------------------------------------------------------------------
+
+
+Max Delay Paths
+--------------------------------------------------------------------------------------
+Slack:                    inf
+  Source:                 rst_reg/C
+                            (rising edge-triggered cell FDRE)
+  Destination:            genblk1[2].aes_instance/state_reg[0][0]/CLR
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        13.849ns  (logic 0.580ns (4.188%)  route 13.269ns (95.812%))
+  Logic Levels:           2  (FDRE=1 LUT1=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    PBlock               Netlist Resource(s)
+  -------------------------------------------------------------------    ----------------------------------------
+    SLICE_X52Y48         FDRE                         0.000     0.000 r                       rst_reg/C
+    SLICE_X52Y48         FDRE (Prop_fdre_C_Q)         0.456     0.456 r                       rst_reg/Q
+                         net (fo=10, routed)          3.163     3.619                         genblk1[2].aes_instance/resetn
+    SLICE_X55Y78         LUT1 (Prop_lut1_I0_O)        0.124     3.743 f  pblock_aes1          genblk1[2].aes_instance/key_val_i_2/O
+                         net (fo=651, routed)        10.106    13.849                         genblk1[2].aes_instance/key_val_i_2_n_0
+    SLICE_X40Y86         FDCE                                         f  pblock_aes1          genblk1[2].aes_instance/state_reg[0][0]/CLR
+  -------------------------------------------------------------------    ----------------------------------------
+
+Slack:                    inf
+  Source:                 rst_reg/C
+                            (rising edge-triggered cell FDRE)
+  Destination:            genblk1[2].aes_instance/state_reg[0][3]/CLR
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        13.849ns  (logic 0.580ns (4.188%)  route 13.269ns (95.812%))
+  Logic Levels:           2  (FDRE=1 LUT1=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    PBlock               Netlist Resource(s)
+  -------------------------------------------------------------------    ----------------------------------------
+    SLICE_X52Y48         FDRE                         0.000     0.000 r                       rst_reg/C
+    SLICE_X52Y48         FDRE (Prop_fdre_C_Q)         0.456     0.456 r                       rst_reg/Q
+                         net (fo=10, routed)          3.163     3.619                         genblk1[2].aes_instance/resetn
+    SLICE_X55Y78         LUT1 (Prop_lut1_I0_O)        0.124     3.743 f  pblock_aes1          genblk1[2].aes_instance/key_val_i_2/O
+                         net (fo=651, routed)        10.106    13.849                         genblk1[2].aes_instance/key_val_i_2_n_0
+    SLICE_X40Y86         FDCE                                         f  pblock_aes1          genblk1[2].aes_instance/state_reg[0][3]/CLR
+  -------------------------------------------------------------------    ----------------------------------------
+
+Slack:                    inf
+  Source:                 rst_reg/C
+                            (rising edge-triggered cell FDRE)
+  Destination:            genblk1[2].aes_instance/state_reg[0][5]/CLR
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        13.849ns  (logic 0.580ns (4.188%)  route 13.269ns (95.812%))
+  Logic Levels:           2  (FDRE=1 LUT1=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    PBlock               Netlist Resource(s)
+  -------------------------------------------------------------------    ----------------------------------------
+    SLICE_X52Y48         FDRE                         0.000     0.000 r                       rst_reg/C
+    SLICE_X52Y48         FDRE (Prop_fdre_C_Q)         0.456     0.456 r                       rst_reg/Q
+                         net (fo=10, routed)          3.163     3.619                         genblk1[2].aes_instance/resetn
+    SLICE_X55Y78         LUT1 (Prop_lut1_I0_O)        0.124     3.743 f  pblock_aes1          genblk1[2].aes_instance/key_val_i_2/O
+                         net (fo=651, routed)        10.106    13.849                         genblk1[2].aes_instance/key_val_i_2_n_0
+    SLICE_X40Y86         FDCE                                         f  pblock_aes1          genblk1[2].aes_instance/state_reg[0][5]/CLR
+  -------------------------------------------------------------------    ----------------------------------------
+
+Slack:                    inf
+  Source:                 rst_reg/C
+                            (rising edge-triggered cell FDRE)
+  Destination:            genblk1[2].aes_instance/round10_key_reg[32]/CLR
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        13.564ns  (logic 0.580ns (4.276%)  route 12.984ns (95.724%))
+  Logic Levels:           2  (FDRE=1 LUT1=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    PBlock               Netlist Resource(s)
+  -------------------------------------------------------------------    ----------------------------------------
+    SLICE_X52Y48         FDRE                         0.000     0.000 r                       rst_reg/C
+    SLICE_X52Y48         FDRE (Prop_fdre_C_Q)         0.456     0.456 r                       rst_reg/Q
+                         net (fo=10, routed)          3.163     3.619                         genblk1[2].aes_instance/resetn
+    SLICE_X55Y78         LUT1 (Prop_lut1_I0_O)        0.124     3.743 f  pblock_aes1          genblk1[2].aes_instance/key_val_i_2/O
+                         net (fo=651, routed)         9.821    13.564                         genblk1[2].aes_instance/key_val_i_2_n_0
+    SLICE_X43Y87         FDCE                                         f  pblock_aes1          genblk1[2].aes_instance/round10_key_reg[32]/CLR
+  -------------------------------------------------------------------    ----------------------------------------
+
+Slack:                    inf
+  Source:                 rst_reg/C
+                            (rising edge-triggered cell FDRE)
+  Destination:            genblk1[2].aes_instance/state_reg[2][17]/CLR
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        13.555ns  (logic 0.580ns (4.279%)  route 12.975ns (95.721%))
+  Logic Levels:           2  (FDRE=1 LUT1=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    PBlock               Netlist Resource(s)
+  -------------------------------------------------------------------    ----------------------------------------
+    SLICE_X52Y48         FDRE                         0.000     0.000 r                       rst_reg/C
+    SLICE_X52Y48         FDRE (Prop_fdre_C_Q)         0.456     0.456 r                       rst_reg/Q
+                         net (fo=10, routed)          3.163     3.619                         genblk1[2].aes_instance/resetn
+    SLICE_X55Y78         LUT1 (Prop_lut1_I0_O)        0.124     3.743 f  pblock_aes1          genblk1[2].aes_instance/key_val_i_2/O
+                         net (fo=651, routed)         9.812    13.555                         genblk1[2].aes_instance/key_val_i_2_n_0
+    SLICE_X44Y86         FDCE                                         f  pblock_aes1          genblk1[2].aes_instance/state_reg[2][17]/CLR
+  -------------------------------------------------------------------    ----------------------------------------
+
+Slack:                    inf
+  Source:                 rst_reg/C
+                            (rising edge-triggered cell FDRE)
+  Destination:            genblk1[2].aes_instance/state_reg[2][18]/CLR
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        13.555ns  (logic 0.580ns (4.279%)  route 12.975ns (95.721%))
+  Logic Levels:           2  (FDRE=1 LUT1=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    PBlock               Netlist Resource(s)
+  -------------------------------------------------------------------    ----------------------------------------
+    SLICE_X52Y48         FDRE                         0.000     0.000 r                       rst_reg/C
+    SLICE_X52Y48         FDRE (Prop_fdre_C_Q)         0.456     0.456 r                       rst_reg/Q
+                         net (fo=10, routed)          3.163     3.619                         genblk1[2].aes_instance/resetn
+    SLICE_X55Y78         LUT1 (Prop_lut1_I0_O)        0.124     3.743 f  pblock_aes1          genblk1[2].aes_instance/key_val_i_2/O
+                         net (fo=651, routed)         9.812    13.555                         genblk1[2].aes_instance/key_val_i_2_n_0
+    SLICE_X44Y86         FDCE                                         f  pblock_aes1          genblk1[2].aes_instance/state_reg[2][18]/CLR
+  -------------------------------------------------------------------    ----------------------------------------
+
+Slack:                    inf
+  Source:                 rst_reg/C
+                            (rising edge-triggered cell FDRE)
+  Destination:            genblk1[2].aes_instance/state_reg[2][22]/CLR
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        13.555ns  (logic 0.580ns (4.279%)  route 12.975ns (95.721%))
+  Logic Levels:           2  (FDRE=1 LUT1=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    PBlock               Netlist Resource(s)
+  -------------------------------------------------------------------    ----------------------------------------
+    SLICE_X52Y48         FDRE                         0.000     0.000 r                       rst_reg/C
+    SLICE_X52Y48         FDRE (Prop_fdre_C_Q)         0.456     0.456 r                       rst_reg/Q
+                         net (fo=10, routed)          3.163     3.619                         genblk1[2].aes_instance/resetn
+    SLICE_X55Y78         LUT1 (Prop_lut1_I0_O)        0.124     3.743 f  pblock_aes1          genblk1[2].aes_instance/key_val_i_2/O
+                         net (fo=651, routed)         9.812    13.555                         genblk1[2].aes_instance/key_val_i_2_n_0
+    SLICE_X44Y86         FDCE                                         f  pblock_aes1          genblk1[2].aes_instance/state_reg[2][22]/CLR
+  -------------------------------------------------------------------    ----------------------------------------
+
+Slack:                    inf
+  Source:                 rst_reg/C
+                            (rising edge-triggered cell FDRE)
+  Destination:            genblk1[2].aes_instance/w_reg[1][2]/CLR
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        13.550ns  (logic 0.580ns (4.280%)  route 12.970ns (95.720%))
+  Logic Levels:           2  (FDRE=1 LUT1=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    PBlock               Netlist Resource(s)
+  -------------------------------------------------------------------    ----------------------------------------
+    SLICE_X52Y48         FDRE                         0.000     0.000 r                       rst_reg/C
+    SLICE_X52Y48         FDRE (Prop_fdre_C_Q)         0.456     0.456 r                       rst_reg/Q
+                         net (fo=10, routed)          3.163     3.619                         genblk1[2].aes_instance/resetn
+    SLICE_X55Y78         LUT1 (Prop_lut1_I0_O)        0.124     3.743 f  pblock_aes1          genblk1[2].aes_instance/key_val_i_2/O
+                         net (fo=651, routed)         9.807    13.550                         genblk1[2].aes_instance/key_val_i_2_n_0
+    SLICE_X45Y86         FDCE                                         f  pblock_aes1          genblk1[2].aes_instance/w_reg[1][2]/CLR
+  -------------------------------------------------------------------    ----------------------------------------
+
+Slack:                    inf
+  Source:                 rst_reg/C
+                            (rising edge-triggered cell FDRE)
+  Destination:            genblk1[2].aes_instance/w_reg[2][2]/CLR
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        13.550ns  (logic 0.580ns (4.280%)  route 12.970ns (95.720%))
+  Logic Levels:           2  (FDRE=1 LUT1=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    PBlock               Netlist Resource(s)
+  -------------------------------------------------------------------    ----------------------------------------
+    SLICE_X52Y48         FDRE                         0.000     0.000 r                       rst_reg/C
+    SLICE_X52Y48         FDRE (Prop_fdre_C_Q)         0.456     0.456 r                       rst_reg/Q
+                         net (fo=10, routed)          3.163     3.619                         genblk1[2].aes_instance/resetn
+    SLICE_X55Y78         LUT1 (Prop_lut1_I0_O)        0.124     3.743 f  pblock_aes1          genblk1[2].aes_instance/key_val_i_2/O
+                         net (fo=651, routed)         9.807    13.550                         genblk1[2].aes_instance/key_val_i_2_n_0
+    SLICE_X45Y86         FDCE                                         f  pblock_aes1          genblk1[2].aes_instance/w_reg[2][2]/CLR
+  -------------------------------------------------------------------    ----------------------------------------
+
+Slack:                    inf
+  Source:                 rst_reg/C
+                            (rising edge-triggered cell FDRE)
+  Destination:            genblk1[2].aes_instance/w_reg[3][2]/CLR
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        13.550ns  (logic 0.580ns (4.280%)  route 12.970ns (95.720%))
+  Logic Levels:           2  (FDRE=1 LUT1=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    PBlock               Netlist Resource(s)
+  -------------------------------------------------------------------    ----------------------------------------
+    SLICE_X52Y48         FDRE                         0.000     0.000 r                       rst_reg/C
+    SLICE_X52Y48         FDRE (Prop_fdre_C_Q)         0.456     0.456 r                       rst_reg/Q
+                         net (fo=10, routed)          3.163     3.619                         genblk1[2].aes_instance/resetn
+    SLICE_X55Y78         LUT1 (Prop_lut1_I0_O)        0.124     3.743 f  pblock_aes1          genblk1[2].aes_instance/key_val_i_2/O
+                         net (fo=651, routed)         9.807    13.550                         genblk1[2].aes_instance/key_val_i_2_n_0
+    SLICE_X45Y86         FDCE                                         f  pblock_aes1          genblk1[2].aes_instance/w_reg[3][2]/CLR
+  -------------------------------------------------------------------    ----------------------------------------
+
+
+
+
+
+Min Delay Paths
+--------------------------------------------------------------------------------------
+Slack:                    inf
+  Source:                 clk
+                            (input port)
+  Destination:            clock/MMCME2_BASE_inst1/CLKFBIN
+  Path Group:             (none)
+  Path Type:              Min at Slow Process Corner
+  Data Path Delay:        -1.506ns  (logic -5.927ns (393.449%)  route 4.420ns (-293.449%))
+  Logic Levels:           3  (BUFG=1 IBUF=1 MMCME2_ADV=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    Y9                                                0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    Y9                   IBUF (Prop_ibuf_I_O)         1.420     1.420 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           1.162     2.582    clock/clkin
+    MMCME2_ADV_X0Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKFBOUT)
+                                                     -7.438    -4.856 r  clock/MMCME2_BASE_inst1/CLKFBOUT
+                         net (fo=1, routed)           1.691    -3.165    clock/CLKFBOUT1
+    BUFGCTRL_X0Y2        BUFG (Prop_bufg_I_O)         0.091    -3.074 r  clock/u25/O
+                         net (fo=1, routed)           1.567    -1.506    clock/CLKFBIN1
+    MMCME2_ADV_X0Y0      MMCME2_ADV                                   r  clock/MMCME2_BASE_inst1/CLKFBIN
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 result_reg[66]/C
+                            (rising edge-triggered cell FDRE)
+  Destination:            text_input_reg[66]/D
+  Path Group:             (none)
+  Path Type:              Min at Fast Process Corner
+  Data Path Delay:        0.206ns  (logic 0.141ns (68.504%)  route 0.065ns (31.496%))
+  Logic Levels:           1  (FDRE=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X56Y72         FDRE                         0.000     0.000 r  result_reg[66]/C
+    SLICE_X56Y72         FDRE (Prop_fdre_C_Q)         0.141     0.141 r  result_reg[66]/Q
+                         net (fo=2, routed)           0.065     0.206    result[66]
+    SLICE_X57Y72         FDRE                                         r  text_input_reg[66]/D
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 genblk1[2].aes_instance/round10_key_reg[119]/C
+                            (rising edge-triggered cell FDCE)
+  Destination:            genblk1[2].aes_instance/iw_reg[0][23]/D
+  Path Group:             (none)
+  Path Type:              Min at Fast Process Corner
+  Data Path Delay:        0.237ns  (logic 0.186ns (78.504%)  route 0.051ns (21.496%))
+  Logic Levels:           2  (FDCE=1 LUT6=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    PBlock               Netlist Resource(s)
+  -------------------------------------------------------------------    ----------------------------------------
+    SLICE_X28Y92         FDCE                         0.000     0.000 r  pblock_aes1          genblk1[2].aes_instance/round10_key_reg[119]/C
+    SLICE_X28Y92         FDCE (Prop_fdce_C_Q)         0.141     0.141 r  pblock_aes1          genblk1[2].aes_instance/round10_key_reg[119]/Q
+                         net (fo=1, routed)           0.051     0.192                         genblk1[2].aes_instance/iSubWord/iw_reg[0][31][23]
+    SLICE_X29Y92         LUT6 (Prop_lut6_I2_O)        0.045     0.237 r  pblock_aes1          genblk1[2].aes_instance/iSubWord/iw[0][23]_i_1/O
+                         net (fo=1, routed)           0.000     0.237                         genblk1[2].aes_instance/iSubWord_n_8
+    SLICE_X29Y92         FDCE                                         r  pblock_aes1          genblk1[2].aes_instance/iw_reg[0][23]/D
+  -------------------------------------------------------------------    ----------------------------------------
+
+Slack:                    inf
+  Source:                 genblk1[1].aes_instance/round10_key_reg[63]/C
+                            (rising edge-triggered cell FDCE)
+  Destination:            genblk1[1].aes_instance/iw_reg[2][31]/D
+  Path Group:             (none)
+  Path Type:              Min at Fast Process Corner
+  Data Path Delay:        0.238ns  (logic 0.186ns (78.117%)  route 0.052ns (21.883%))
+  Logic Levels:           2  (FDCE=1 LUT6=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    PBlock               Netlist Resource(s)
+  -------------------------------------------------------------------    ----------------------------------------
+    SLICE_X95Y91         FDCE                         0.000     0.000 r  pblock_aes1          genblk1[1].aes_instance/round10_key_reg[63]/C
+    SLICE_X95Y91         FDCE (Prop_fdce_C_Q)         0.141     0.141 r  pblock_aes1          genblk1[1].aes_instance/round10_key_reg[63]/Q
+                         net (fo=1, routed)           0.052     0.193                         genblk1[1].aes_instance/round10_key[63]
+    SLICE_X94Y91         LUT6 (Prop_lut6_I2_O)        0.045     0.238 r  pblock_aes1          genblk1[1].aes_instance/iw[2][31]_i_1/O
+                         net (fo=1, routed)           0.000     0.238                         genblk1[1].aes_instance/iw[2][31]_i_1_n_0
+    SLICE_X94Y91         FDCE                                         r  pblock_aes1          genblk1[1].aes_instance/iw_reg[2][31]/D
+  -------------------------------------------------------------------    ----------------------------------------
+
+Slack:                    inf
+  Source:                 genblk1[3].aes_instance/round10_key_reg[104]/C
+                            (rising edge-triggered cell FDCE)
+  Destination:            genblk1[3].aes_instance/iw_reg[0][8]/D
+  Path Group:             (none)
+  Path Type:              Min at Fast Process Corner
+  Data Path Delay:        0.238ns  (logic 0.186ns (78.117%)  route 0.052ns (21.883%))
+  Logic Levels:           2  (FDCE=1 LUT6=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    PBlock               Netlist Resource(s)
+  -------------------------------------------------------------------    ----------------------------------------
+    SLICE_X31Y60         FDCE                         0.000     0.000 r  pblock_aes1          genblk1[3].aes_instance/round10_key_reg[104]/C
+    SLICE_X31Y60         FDCE (Prop_fdce_C_Q)         0.141     0.141 r  pblock_aes1          genblk1[3].aes_instance/round10_key_reg[104]/Q
+                         net (fo=1, routed)           0.052     0.193                         genblk1[3].aes_instance/iSubWord/iw_reg[0][31][8]
+    SLICE_X30Y60         LUT6 (Prop_lut6_I2_O)        0.045     0.238 r  pblock_aes1          genblk1[3].aes_instance/iSubWord/iw[0][8]_i_1/O
+                         net (fo=1, routed)           0.000     0.238                         genblk1[3].aes_instance/iSubWord_n_23
+    SLICE_X30Y60         FDCE                                         r  pblock_aes1          genblk1[3].aes_instance/iw_reg[0][8]/D
+  -------------------------------------------------------------------    ----------------------------------------
+
+Slack:                    inf
+  Source:                 genblk1[0].aes_instance/round10_key_reg[83]/C
+                            (rising edge-triggered cell FDCE)
+  Destination:            genblk1[0].aes_instance/iw_reg[1][19]/D
+  Path Group:             (none)
+  Path Type:              Min at Fast Process Corner
+  Data Path Delay:        0.239ns  (logic 0.186ns (77.839%)  route 0.053ns (22.161%))
+  Logic Levels:           2  (FDCE=1 LUT6=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    PBlock               Netlist Resource(s)
+  -------------------------------------------------------------------    ----------------------------------------
+    SLICE_X72Y49         FDCE                         0.000     0.000 r  pblock_aes1          genblk1[0].aes_instance/round10_key_reg[83]/C
+    SLICE_X72Y49         FDCE (Prop_fdce_C_Q)         0.141     0.141 r  pblock_aes1          genblk1[0].aes_instance/round10_key_reg[83]/Q
+                         net (fo=1, routed)           0.053     0.194                         genblk1[0].aes_instance/round10_key[83]
+    SLICE_X73Y49         LUT6 (Prop_lut6_I2_O)        0.045     0.239 r  pblock_aes1          genblk1[0].aes_instance/iw[1][19]_i_1/O
+                         net (fo=1, routed)           0.000     0.239                         genblk1[0].aes_instance/iw[1][19]_i_1_n_0
+    SLICE_X73Y49         FDCE                                         r  pblock_aes1          genblk1[0].aes_instance/iw_reg[1][19]/D
+  -------------------------------------------------------------------    ----------------------------------------
+
+Slack:                    inf
+  Source:                 genblk1[0].aes_instance/round10_key_reg[121]/C
+                            (rising edge-triggered cell FDCE)
+  Destination:            genblk1[0].aes_instance/iw_reg[0][25]/D
+  Path Group:             (none)
+  Path Type:              Min at Fast Process Corner
+  Data Path Delay:        0.240ns  (logic 0.186ns (77.466%)  route 0.054ns (22.534%))
+  Logic Levels:           2  (FDCE=1 LUT6=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    PBlock               Netlist Resource(s)
+  -------------------------------------------------------------------    ----------------------------------------
+    SLICE_X95Y53         FDCE                         0.000     0.000 r  pblock_aes1          genblk1[0].aes_instance/round10_key_reg[121]/C
+    SLICE_X95Y53         FDCE (Prop_fdce_C_Q)         0.141     0.141 r  pblock_aes1          genblk1[0].aes_instance/round10_key_reg[121]/Q
+                         net (fo=1, routed)           0.054     0.195                         genblk1[0].aes_instance/iSubWord/iw_reg[0][31][25]
+    SLICE_X94Y53         LUT6 (Prop_lut6_I2_O)        0.045     0.240 r  pblock_aes1          genblk1[0].aes_instance/iSubWord/iw[0][25]_i_1/O
+                         net (fo=1, routed)           0.000     0.240                         genblk1[0].aes_instance/iSubWord_n_6
+    SLICE_X94Y53         FDCE                                         r  pblock_aes1          genblk1[0].aes_instance/iw_reg[0][25]/D
+  -------------------------------------------------------------------    ----------------------------------------
+
+Slack:                    inf
+  Source:                 genblk1[0].aes_instance/round10_key_reg[35]/C
+                            (rising edge-triggered cell FDCE)
+  Destination:            genblk1[0].aes_instance/iw_reg[2][3]/D
+  Path Group:             (none)
+  Path Type:              Min at Fast Process Corner
+  Data Path Delay:        0.240ns  (logic 0.186ns (77.466%)  route 0.054ns (22.534%))
+  Logic Levels:           2  (FDCE=1 LUT6=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    PBlock               Netlist Resource(s)
+  -------------------------------------------------------------------    ----------------------------------------
+    SLICE_X95Y63         FDCE                         0.000     0.000 r  pblock_aes1          genblk1[0].aes_instance/round10_key_reg[35]/C
+    SLICE_X95Y63         FDCE (Prop_fdce_C_Q)         0.141     0.141 r  pblock_aes1          genblk1[0].aes_instance/round10_key_reg[35]/Q
+                         net (fo=1, routed)           0.054     0.195                         genblk1[0].aes_instance/round10_key[35]
+    SLICE_X94Y63         LUT6 (Prop_lut6_I2_O)        0.045     0.240 r  pblock_aes1          genblk1[0].aes_instance/iw[2][3]_i_1/O
+                         net (fo=1, routed)           0.000     0.240                         genblk1[0].aes_instance/iw[2][3]_i_1_n_0
+    SLICE_X94Y63         FDCE                                         r  pblock_aes1          genblk1[0].aes_instance/iw_reg[2][3]/D
+  -------------------------------------------------------------------    ----------------------------------------
+
+Slack:                    inf
+  Source:                 genblk1[1].aes_instance/round10_key_reg[67]/C
+                            (rising edge-triggered cell FDCE)
+  Destination:            genblk1[1].aes_instance/iw_reg[1][3]/D
+  Path Group:             (none)
+  Path Type:              Min at Fast Process Corner
+  Data Path Delay:        0.240ns  (logic 0.186ns (77.466%)  route 0.054ns (22.534%))
+  Logic Levels:           2  (FDCE=1 LUT6=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    PBlock               Netlist Resource(s)
+  -------------------------------------------------------------------    ----------------------------------------
+    SLICE_X83Y84         FDCE                         0.000     0.000 r  pblock_aes1          genblk1[1].aes_instance/round10_key_reg[67]/C
+    SLICE_X83Y84         FDCE (Prop_fdce_C_Q)         0.141     0.141 r  pblock_aes1          genblk1[1].aes_instance/round10_key_reg[67]/Q
+                         net (fo=1, routed)           0.054     0.195                         genblk1[1].aes_instance/round10_key[67]
+    SLICE_X82Y84         LUT6 (Prop_lut6_I2_O)        0.045     0.240 r  pblock_aes1          genblk1[1].aes_instance/iw[1][3]_i_1/O
+                         net (fo=1, routed)           0.000     0.240                         genblk1[1].aes_instance/iw[1][3]_i_1_n_0
+    SLICE_X82Y84         FDCE                                         r  pblock_aes1          genblk1[1].aes_instance/iw_reg[1][3]/D
+  -------------------------------------------------------------------    ----------------------------------------
+
+Slack:                    inf
+  Source:                 genblk1[1].aes_instance/round10_key_reg[52]/C
+                            (rising edge-triggered cell FDCE)
+  Destination:            genblk1[1].aes_instance/iw_reg[2][20]/D
+  Path Group:             (none)
+  Path Type:              Min at Fast Process Corner
+  Data Path Delay:        0.240ns  (logic 0.186ns (77.466%)  route 0.054ns (22.534%))
+  Logic Levels:           2  (FDCE=1 LUT6=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    PBlock               Netlist Resource(s)
+  -------------------------------------------------------------------    ----------------------------------------
+    SLICE_X83Y84         FDCE                         0.000     0.000 r  pblock_aes1          genblk1[1].aes_instance/round10_key_reg[52]/C
+    SLICE_X83Y84         FDCE (Prop_fdce_C_Q)         0.141     0.141 r  pblock_aes1          genblk1[1].aes_instance/round10_key_reg[52]/Q
+                         net (fo=1, routed)           0.054     0.195                         genblk1[1].aes_instance/round10_key[52]
+    SLICE_X82Y84         LUT6 (Prop_lut6_I2_O)        0.045     0.240 r  pblock_aes1          genblk1[1].aes_instance/iw[2][20]_i_1/O
+                         net (fo=1, routed)           0.000     0.240                         genblk1[1].aes_instance/iw[2][20]_i_1_n_0
+    SLICE_X82Y84         FDCE                                         r  pblock_aes1          genblk1[1].aes_instance/iw_reg[2][20]/D
+  -------------------------------------------------------------------    ----------------------------------------
+
+
+
+
+

@@ -1,0 +1,16 @@
++====================+===================+====================================+
+| Launch Setup Clock | Launch Hold Clock | Pin                                |
++====================+===================+====================================+
+| clkOutBuf          | clkOutBuf         | tdc1_decode/dec_reg_reg[1]/D       |
+| clkOutBuf          | clkOutBuf         | tdc_decode/dec_reg_reg[1]/D        |
+| clkOutBuf          | clkOutBuf         | tdc1_decode/dec_reg_reg[0]/D       |
+| clkOutBuf          | clkOutBuf         | tdc_decode/dec_reg_reg[0]/D        |
+| clkOutBuf          | clkOutBuf         | tp/gen_code_label2[3].LDPE_insti/D |
+| clkOutBuf          | clkOutBuf         | tp/gen_code_label2[1].LDPE_insti/D |
+| clkOutBuf          | clkOutBuf         | tp/gen_code_label2[0].LDPE_insti/D |
+| clkOutBuf          | clkOutBuf         | tp/gen_code_label2[2].LDPE_insti/D |
+| clkOutBuf          | clkOutBuf         | tp/gen_code_label2[7].LDPE_insti/D |
+| clkOutBuf          | clkOutBuf         | tp/gen_code_label2[5].LDPE_insti/D |
+| clkOutBuf          | clkOutBuf         | tp/gen_code_label2[4].LDPE_insti/D |
+| clkOutBuf          | clkOutBuf         | tp/gen_code_label2[6].LDPE_insti/D |
++--------------------+-------------------+------------------------------------+

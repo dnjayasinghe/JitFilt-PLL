@@ -1,0 +1,70 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\Darshana\\Documents\\GitHub\\JitFilt\\ZynqRO-UART-Checker-SIMON\\ZynqRO-UART-Checker\\ZynqRO-UART-Checker.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\Darshana\\Documents\\GitHub\\JitFilt\\ZynqRO-UART-Checker-SIMON\\ZynqRO-UART-Checker\\ZynqRO-UART-Checker.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Darshana\\Documents\\GitHub\\JitFilt\\ZynqRO-UART-Checker-SIMON\\ZynqRO-UART-Checker\\ZynqRO-UART-Checker.csproj",
+        "projectName": "JitFilt-UART-Checker",
+        "projectPath": "C:\\Users\\Darshana\\Documents\\GitHub\\JitFilt\\ZynqRO-UART-Checker-SIMON\\ZynqRO-UART-Checker\\ZynqRO-UART-Checker.csproj",
+        "packagesPath": "C:\\Users\\Darshana\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Darshana\\Documents\\GitHub\\JitFilt\\ZynqRO-UART-Checker-SIMON\\ZynqRO-UART-Checker\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Darshana\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net461"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net461": {
+            "targetAlias": "net461",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net461": {
+          "targetAlias": "net461",
+          "dependencies": {
+            "FTD2XX_NET": {
+              "target": "Package",
+              "version": "[1.0.14, )"
+            },
+            "Microsoft.CSharp": {
+              "target": "Package",
+              "version": "[4.*, )"
+            },
+            "System.Data.DataSetExtensions": {
+              "target": "Package",
+              "version": "[4.*, )"
+            },
+            "System.Net.Http": {
+              "target": "Package",
+              "version": "[4.*, )"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.400\\RuntimeIdentifierGraph.json"
+        }
+      },
+      "runtimes": {
+        "win7-x86": {
+          "#import": []
+        }
+      }
+    }
+  }
+}
