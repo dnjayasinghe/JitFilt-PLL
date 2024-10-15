@@ -27,4 +27,4 @@ The serial numbers of FTDI UARTs must be used in the JitFilt_UART_Checker C# pro
 
 
 ## FPGA and FTDI 232RL Connections
-![FPGA UART conenctions](./readme-images/UART_connections.png)
+![FPGA UART conenctions](./readme-images/UARTconnections.png)
