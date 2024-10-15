@@ -2,7 +2,7 @@
  JitFilt-PLL Implementation
 
 
-## How to configure FTDI Serial modules. 
+## How to Configure FTDI Serial Modules. 
 We used FTDI 232RL as UARTS. Other UARTs may be compatible. 
 
 The serial numbers of FTDI UARTs must be used in the JitFilt_UART_Checker C# program
@@ -17,8 +17,10 @@ The serial numbers of FTDI UARTs must be used in the JitFilt_UART_Checker C# pro
 							
 
 
-## FPGA 1 and FPGA 2 are connections
+## FPGA 1 and FPGA 2 Connections
 
-
+![FPGA conenctions](./readme-images/FPGA_Figure.png)
  
+### Pmod Connections 
 
+![FPGA Pmod conenctions](./readme-images/FPGA_connections.png)
