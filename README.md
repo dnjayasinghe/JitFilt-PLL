@@ -32,7 +32,7 @@ The serial numbers of FTDI UARTs must be used in the JitFilt_UART_Checker C# pro
 ## Collect Traces using JitFilt_UART_Checker
 
 ## CPA Attacks using CUDA 
--Edit  **#define SAMPLES** to reflect the number of traces/ encryptions you collected in **kernel-TDC-KR.cu**
+-Edit  **#define SAMPLES** in **kernel-TDC-KR.cu** to reflect the number of traces/ encryptions you collected
 
 -Compile 
 
