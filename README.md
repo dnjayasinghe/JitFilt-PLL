@@ -3,7 +3,7 @@
 
 
 ## How to Configure FTDI Serial Modules. 
-We used FTDI 232RL UARTS. Other UARTs may be compatible. 
+We used FTDI 232RL UARTs. Other UARTs may be compatible. 
 
 The serial numbers of FTDI UARTs must be used in the JitFilt_UART_Checker C# program
 
