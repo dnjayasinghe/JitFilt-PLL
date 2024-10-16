@@ -12,8 +12,8 @@ The serial numbers of FTDI UARTs must be used in the JitFilt_UART_Checker C# pro
     	|_____ JitFilt_UART_Checker 
                |
                |_____Program.cs               
-	       		-static string FPGA1_FTDI_SERIAL_NUMBER= "A50285BI";  // change this to your FTDI NUMBER
-			-static string FPGA2_FTDI_SERIAL_NUMBER = "AD0JIHIL";  // change this to your FTDI NUMBER
+		-static string FPGA1_FTDI_SERIAL_NUMBER= "A50285BI";  // change this to your FTDI NUMBER
+		-static string FPGA2_FTDI_SERIAL_NUMBER = "AD0JIHIL";  // change this to your FTDI NUMBER
 							
 
 
