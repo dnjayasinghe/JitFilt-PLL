@@ -27,3 +27,17 @@ The serial numbers of FTDI UARTs must be used in the JitFilt_UART_Checker C# pro
 
 ## FPGA and FTDI 232RL Connections
 ![FPGA UART connections](./readme-images/UARTconnections.png)
+
+
+## Collect Traces using JitFilt_UART_Checker
+
+## CPA Attacks using CUDA 
+-Edit  **#define SAMPLES** to reflect the number of traces/ encryptions you collected in **kernel-TDC-KR.cu**
+
+-Compile 
+
+```nvcc -w   kernel-TDC-orig1.cu  helpers.cu  -o kernel-TDC-KR ```
+
+-Run CPA attacks (Change file names)
+
+```./kernel-TDC-KR   datafile.data  data-out.txt  0  ```
